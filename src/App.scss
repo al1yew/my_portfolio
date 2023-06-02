@@ -465,18 +465,32 @@ input::-webkit-inner-spin-button {
     z-index: 10;
     font-family: var(--pp_regular);
     font-weight: 400;
-    font-size: 23px;
-    padding: 0;
+    font-size: 18px;
     margin: 0;
+    transition: 0.3s ease-in-out;
+    padding: 12px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 1px solid black;
 
     .all {
-        padding: 0 20px;
         display: grid;
+        width: 90%;
         grid-template-columns: 80px auto;
         column-gap: 150px;
 
         .imgkeeper {
+            transition: 0.3s ease-in-out;
+
+            @media (min-width:576px) {
+                &:hover {
+                    transform: rotateY(4 * 180deg);
+                }
+            }
+
             img {
                 width: 100%;
             }
@@ -487,8 +501,28 @@ input::-webkit-inner-spin-button {
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            li {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    z-index: 300;
+                    background-color: black;
+                    transition: 0.3s ease-in-out;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
-
-
 }
