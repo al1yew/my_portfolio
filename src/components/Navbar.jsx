@@ -1,7 +1,11 @@
 import { links } from "../constants";
 import logo from "../assets/images/logo.jpg";
+import { BsSun, BsMoon } from "react-icons/bs";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+    const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
+
     return (
         <nav id="header" className="">
             <div className="all">
@@ -19,6 +23,17 @@ const Navbar = () => {
                         );
                     })}
                 </ul>
+                <div className="theme">
+                    {isDarkTheme ? (
+                        <span onClick={toggleDarkTheme}>
+                            <BsSun />
+                        </span>
+                    ) : (
+                        <span onClick={toggleDarkTheme}>
+                            <BsMoon />
+                        </span>
+                    )}
+                </div>
             </div>
         </nav>
     );
