@@ -576,6 +576,9 @@ input::-webkit-inner-spin-button {
 #header .all .theme span svg {
   font-size: 30px;
 }
+#header .all .hamburger {
+  display: none;
+}
 
 .about {
   margin-top: 80px;
@@ -585,6 +588,7 @@ input::-webkit-inner-spin-button {
 .about .all {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -666,4 +670,46 @@ input::-webkit-inner-spin-button {
 }
 .about .all .right img {
   width: 100%;
+}
+
+@media (max-width: 576px) {
+  #header {
+    font-size: 14px !important;
+    height: 60px !important;
+  }
+  #header .all {
+    display: flex !important;
+    width: 95% !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  #header .all .imgkeeper {
+    order: 2 !important;
+    width: 20%;
+  }
+  #header .all ul {
+    display: none !important;
+  }
+  #header .all .theme {
+    order: 1 !important;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  #header .all .theme span svg {
+    font-size: 40px !important;
+  }
+  #header .all .hamburger {
+    order: 3 !important;
+    display: block !important;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #header .all .hamburger svg {
+    color: var(--textColor) !important;
+    font-size: 40px !important;
+  }
 }/*# sourceMappingURL=App.css.map */

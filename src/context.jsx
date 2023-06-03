@@ -14,11 +14,27 @@ const getInitialDarkMode = () => {
 
 export const AppProvider = ({ children }) => {
     const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+    //proverit dark mode
+    //sdelat responsivlik
+    //sdelat sidebar
+    //ubrat foto i zamenit vse na 100vh i position absolute
+    //navbar balacashsin i dizaynin fikirleshmek
+    //zamenit logo po dark theme
+    
     const toggleDarkTheme = () => {
         const newDarkTheme = !isDarkTheme;
         setIsDarkTheme(newDarkTheme);
         localStorage.setItem("dark_theme", newDarkTheme);
+    };
+
+    const openSidebar = () => {
+        setIsSidebarOpen(true);
+    };
+
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
     };
 
     useEffect(() => {
@@ -26,7 +42,16 @@ export const AppProvider = ({ children }) => {
     }, [isDarkTheme]);
 
     return (
-        <AppContext.Provider value={{ isDarkTheme, toggleDarkTheme }}>
+        <AppContext.Provider
+            value={{
+                isDarkTheme,
+                toggleDarkTheme,
+                isSidebarOpen,
+                setIsSidebarOpen,
+                openSidebar,
+                closeSidebar,
+            }}
+        >
             {children}
         </AppContext.Provider>
     );

@@ -1,17 +1,25 @@
 import { links } from "../constants";
-import logo from "../assets/images/logo.jpg";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 import { useGlobalContext } from "../context";
+import logoWhite from "../assets/images/logoW.jpg";
 
 const Navbar = () => {
-    const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
+    const {
+        isDarkTheme,
+        toggleDarkTheme,
+        isSidebarOpen,
+        closeSidebar,
+        openSidebar,
+    } = useGlobalContext();
 
     return (
         <nav id="header" className="">
             <div className="all">
                 <div className="imgkeeper">
                     <a href="#home">
-                        <img src={logo} alt="vasif aliyev" />
+                        <img src={logoWhite} alt="vasif aliyev" />
                     </a>
                 </div>
                 <ul>
@@ -33,6 +41,9 @@ const Navbar = () => {
                             <BsMoon />
                         </span>
                     )}
+                </div>
+                <div className="hamburger">
+                    {isSidebarOpen ? <AiOutlineClose /> : <RxHamburgerMenu />}
                 </div>
             </div>
         </nav>
