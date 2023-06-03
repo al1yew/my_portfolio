@@ -1,4 +1,12 @@
+import HeroSection from "./HeroSection";
+import AboutSection from "./AboutSection";
+
 const Content = () => {
-    return <div>Content</div>;
+    return (
+        <main>
+            <HeroSection />
+            <AboutSection />
+        </main>
+    );
 };
 export default Content;

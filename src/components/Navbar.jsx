@@ -3,10 +3,10 @@ import logo from "../assets/images/logo.jpg";
 
 const Navbar = () => {
     return (
-        <nav id="header">
+        <nav id="header" className="">
             <div className="all">
                 <div className="imgkeeper">
-                    <a href="#HOME">
+                    <a href="#home">
                         <img src={logo} alt="vasif aliyev" />
                     </a>
                 </div>
