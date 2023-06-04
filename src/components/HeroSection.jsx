@@ -32,10 +32,14 @@ const HeroSection = () => {
                         build remarkable software solutions together.
                     </p>
                     <div className="bottom col-lg-12 col-12 col-md-12">
-                        <button type="button" onClick={downloadFile}>
+                        <button
+                            type="button"
+                            className="col-lg-5-5 col-5-5 col-md-5-5"
+                            onClick={downloadFile}
+                        >
                             Download My CV
                         </button>
-                        <div className="icons">
+                        <div className="icons col-lg-5-5 col-5-5 col-md-5-5">
                             <span>
                                 <a
                                     href="https://github.com/al1yew"
