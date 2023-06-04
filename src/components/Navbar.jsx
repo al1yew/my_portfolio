@@ -3,14 +3,17 @@ import { BsSun, BsMoon } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
 import { useGlobalContext } from "../context";
-import logoWhite from "../assets/images/logoW.jpg";
-import { useRef, useEffect } from "react";
+import logoWhite from "../assets/images/logoW.png";
+import logoBlack from "../assets/images/logoB.png";
+import { useRef, useEffect, useState } from "react";
 
 const Navbar = () => {
-    const { isDarkTheme, toggleDarkTheme, isSidebarOpen, setIsSidebarOpen } =
-        useGlobalContext();
+    const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
 
     const sidebarRef = useRef(null);
+
+    const [isScroll, setIsScroll] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -26,12 +29,30 @@ const Navbar = () => {
         };
     }, [setIsSidebarOpen]);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScroll(window.scrollY > 15);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <header id="header" className="header">
+        <header
+            id="header"
+            className={isScroll ? "header thin_header" : "header"}
+        >
             <div className="all">
-                <div className="imgkeeper col-lg-1 col-2 col-md-1-5">
+                <div className="imgkeeper">
                     <a href="#Home">
-                        <img src={logoWhite} alt="vasif aliyev" />
+                        <img
+                            src={isDarkTheme ? logoBlack : logoWhite}
+                            alt="vasif aliyev"
+                        />
                     </a>
                 </div>
                 <ul className="comp_ul col-lg-7 col-md-9">

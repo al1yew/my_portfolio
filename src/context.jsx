@@ -20,7 +20,6 @@ const getInitialDarkMode = () => {
 
 export const AppProvider = ({ children }) => {
     const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleDarkTheme = () => {
         const newDarkTheme = !isDarkTheme;
@@ -37,8 +36,6 @@ export const AppProvider = ({ children }) => {
             value={{
                 isDarkTheme,
                 toggleDarkTheme,
-                isSidebarOpen,
-                setIsSidebarOpen,
             }}
         >
             {children}

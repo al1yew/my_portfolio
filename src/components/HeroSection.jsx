@@ -1,7 +1,10 @@
-import hero from "../assets/images/photo1_edit.jpeg";
 import CV from "../assets/files/CV.pdf";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import img1 from "../assets/images/1-02.png";
+import img2 from "../assets/images/1-03.png";
+import img3 from "../assets/images/1-04.png";
+import img4 from "../assets/images/1-05.png";
 
 const HeroSection = () => {
     const downloadFile = () => {
@@ -63,6 +66,18 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-12 right">
+                    <div className="imgkeeper">
+                        <img src={img1} alt="developer" />
+                    </div>
+                    <div className="imgkeeper">
+                        <img src={img2} alt="code" />
+                    </div>
+                    <div className="imgkeeper">
+                        <img src={img3} alt="software" />
+                    </div>
+                    <div className="imgkeeper">
+                        <img src={img4} alt="website" />
+                    </div>
                 </div>
             </div>
         </section>

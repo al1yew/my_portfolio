@@ -639,11 +639,12 @@ input::-webkit-inner-spin-button {
         align-items: center;
 
         .imgkeeper {
-            transition: 0.4s ease-in-out;
+            transition: 0.3s ease-in-out;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px 0;
+            width: 110px;
+            padding: 10px 0;
 
             a {
                 display: flex;
@@ -651,13 +652,13 @@ input::-webkit-inner-spin-button {
                 align-items: center;
 
                 img {
-                    width: 90%;
+                    width: 100%;
                 }
             }
 
             @media (min-width:576px) {
                 &:hover {
-                    transform: rotateY(4 * 180deg);
+                    transform: rotateY(2 * 180deg);
                 }
             }
         }
@@ -739,11 +740,25 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.thin_header {
+    .all {
+        .imgkeeper {
+            width: 60px !important;
+        }
+
+        .theme {
+            svg {
+                font-size: 30px !important;
+            }
+        }
+    }
+}
+
 .home {
     margin-top: 70px;
     width: 100%;
     padding: 0;
-    display: none;
+    height: 100vh;
 
     .all {
         display: flex;
@@ -751,13 +766,15 @@ input::-webkit-inner-spin-button {
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
+        height: 100%;
 
         .left {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             flex-direction: column;
             padding: 20px 5%;
-            row-gap: 8%;
+            height: 100%;
 
             p {
                 font-family: var(--pp_regular);
@@ -833,29 +850,58 @@ input::-webkit-inner-spin-button {
         }
 
         .right {
-            img {
-                width: 100%;
+            background-color: var(--otherBackgroundColor);
+            position: relative;
+
+            .imgkeeper {
+                position: absolute;
+
+                &:nth-child(1) {
+                    top: 10%;
+                    left: 10%;
+                    width: 25%;
+                }
+
+                &:nth-child(2) {
+                    top: 10%;
+                    right: 10%;
+                    width: 22%;
+                    transform: rotate(-15deg);
+                }
+
+                &:nth-child(3) {
+                    bottom: 5%;
+                    right: 15%;
+                    transform: rotate(15deg);
+                    width: 14%;
+                }
+
+                &:nth-child(4) {
+                    bottom: 20%;
+                    left: 15%;
+                    transform: rotate(-15deg);
+                    width: 14%;
+                }
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
 }
 
-.about {
-    margin-top: 70px;
-    width: 100%;
-    padding: 0;
-}
-
 @media (max-width:576px) {
     .header {
-        font-size: 14px !important;
+        font-size: 15px !important;
 
         .all {
             position: relative;
 
             .imgkeeper {
                 order: 2 !important;
-                padding: 6px 0;
+                padding: 7px 0 !important;
+                width: 90px !important;
             }
 
             .comp_ul {
@@ -888,12 +934,12 @@ input::-webkit-inner-spin-button {
             .sidebar {
                 display: block;
                 position: absolute;
-                top: 60px;
+                top: 100%;
                 transition: 0.3s;
                 right: 50%;
                 transform: translateX(50%);
                 width: 95%;
-                height: 200px;
+                height: 250px;
                 background-color: var(--backgroundColor);
                 color: var(--textColor);
                 border: 1px solid #00FF00;
@@ -911,7 +957,7 @@ input::-webkit-inner-spin-button {
                     flex-direction: column;
 
                     li {
-                        font-size: 17px;
+                        font-size: 18px;
 
                         a {
                             color: var(--textColor);
@@ -935,14 +981,14 @@ input::-webkit-inner-spin-button {
 
 @media(min-width:576px) and (max-width:992px) {
     .header {
-        font-size: 18px !important;
+        font-size: 20px !important;
 
         .all {
             position: relative;
 
             .imgkeeper {
                 order: 2 !important;
-                padding: 6px 0;
+                padding: 9px 0 !important;
             }
 
             .comp_ul {
@@ -975,12 +1021,12 @@ input::-webkit-inner-spin-button {
             .sidebar {
                 display: block;
                 position: absolute;
-                top: 60px;
+                top: 100%;
                 transition: 0.3s;
                 right: 50%;
                 transform: translateX(50%);
                 width: 95%;
-                height: 200px;
+                height: 250px;
                 background-color: var(--backgroundColor);
                 color: var(--textColor);
                 border: 1px solid #00FF00;
@@ -998,7 +1044,7 @@ input::-webkit-inner-spin-button {
                     flex-direction: column;
 
                     li {
-                        font-size: 17px;
+                        font-size: 20px;
 
                         a {
                             color: var(--textColor);
