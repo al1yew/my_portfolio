@@ -896,7 +896,7 @@ input::-webkit-inner-spin-button {
   }
   .home {
     margin-top: 57px !important;
-    height: 120vh !important;
+    height: 130vh !important;
   }
   .home .all .left {
     padding: 20px 5% !important;
@@ -1087,6 +1087,7 @@ input::-webkit-inner-spin-button {
   }
   .home {
     margin-top: 65px !important;
+    height: 100vh !important;
   }
   .home .all .left {
     padding: 20px 5% !important;
