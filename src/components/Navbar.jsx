@@ -27,7 +27,7 @@ const Navbar = () => {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [setIsSidebarOpen]);
+    }, [isSidebarOpen]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [isSidebarOpen]);
 
     return (
         <header
