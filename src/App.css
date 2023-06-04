@@ -33,8 +33,9 @@ body {
 
 :root {
   --pp_regular: PP_regular;
-  --pp_regular: PP_light;
+  --pp_light: PP_light;
   --pixel: pixel;
+  --pp_plain: PP_plain;
   --darkModeTransition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   --textColor: black;
   --backgroundColor: white;
@@ -460,6 +461,10 @@ body {
   font-family: pixel;
   src: url(./assets/fonts/PixelColeco.otf);
 }
+@font-face {
+  font-family: PP_plain;
+  src: url(./assets/fonts/PPNeueMachina-PlainRegular.otf);
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -603,7 +608,7 @@ input::-webkit-inner-spin-button {
   margin-top: 70px;
   width: 100%;
   padding: 0;
-  height: 100vh;
+  height: 92vh;
 }
 .home .all {
   display: flex;
@@ -618,7 +623,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   padding-left: 5%;
   padding-right: 3%;
   height: 100%;
@@ -632,13 +637,13 @@ input::-webkit-inner-spin-button {
 .home .all .left p:nth-child(2) {
   color: black;
   font-family: var(--pixel);
-  font-size: 35px;
+  font-size: 33px;
   width: -moz-max-content;
   width: max-content;
   height: -moz-max-content;
   height: max-content;
   transform: rotate(-3deg);
-  padding: 5% 10%;
+  padding: 3% 8%;
   border-radius: 50px;
   background-color: #00FF00;
   box-shadow: 7px 7px 2px 0px var(--textColor);
@@ -646,13 +651,13 @@ input::-webkit-inner-spin-button {
 .home .all .left p:nth-child(4) {
   color: black;
   font-family: var(--pixel);
-  font-size: 35px;
+  font-size: 33px;
   width: -moz-max-content;
   width: max-content;
   height: -moz-max-content;
   height: max-content;
   transform: rotate(3deg);
-  padding: 5% 10%;
+  padding: 3% 8%;
   border-radius: 50px;
   background-color: #00FF00;
   box-shadow: -7px -7px 2px 0px var(--textColor);
@@ -661,7 +666,7 @@ input::-webkit-inner-spin-button {
   font-size: 18px;
   text-align: start;
   line-height: 25px;
-  font-family: PP_light;
+  font-family: var(--pp_light);
 }
 .home .all .left .bottom {
   display: flex;
@@ -725,6 +730,91 @@ input::-webkit-inner-spin-button {
 }
 .home .all .right .imgkeeper img {
   width: 100%;
+}
+
+.about {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .all {
+  font-family: var(--pp_regular);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  row-gap: 30px;
+}
+.about .all h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+}
+.about .all .textelement {
+  font-size: 17px;
+  font-family: var(--pp_light);
+  line-height: 20px;
+}
+.about .all .element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .all .element div {
+  position: relative;
+}
+.about .all .element div span {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+}
+.about .all .element div span svg {
+  fill: var(--textColor);
+  width: 80%;
+}
+.about .all .element div p {
+  width: 100%;
+  font-family: var(--pp_plain);
+  font-size: 18px;
+  position: absolute;
+  bottom: 18%;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+}
+.about .all .element .special {
+  position: relative;
+}
+.about .all .element .special span {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+}
+.about .all .element .special span svg {
+  fill: var(--textColor);
+  width: 80%;
+}
+.about .all .element .special p {
+  width: 100%;
+  font-family: var(--pp_plain);
+  font-size: 18px;
+  position: absolute;
+  top: 15%;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -806,10 +896,11 @@ input::-webkit-inner-spin-button {
   }
   .home {
     margin-top: 57px !important;
+    height: 120vh !important;
   }
   .home .all .left {
     padding: 20px 5% !important;
-    height: 80% !important;
+    height: 60% !important;
   }
   .home .all .left p {
     font-size: 20px !important;
@@ -846,7 +937,7 @@ input::-webkit-inner-spin-button {
     height: 28px !important;
   }
   .home .all .right {
-    height: 50% !important;
+    height: 40% !important;
   }
   .home .all .right .imgkeeper:nth-child(1) {
     top: 7% !important;
@@ -865,6 +956,56 @@ input::-webkit-inner-spin-button {
     bottom: 17% !important;
     left: 8% !important;
     width: 13% !important;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
+  .order-4 {
+    order: 4;
+  }
+  .about {
+    margin-top: 20px !important;
+  }
+  .about .all {
+    row-gap: 0px !important;
+  }
+  .about .all h1 {
+    margin-bottom: 20px !important;
+    font-size: 30px !important;
+  }
+  .about .all .textelement {
+    font-size: 15px !important;
+    margin-bottom: 30px;
+    line-height: 23px !important;
+  }
+  .about .all .element {
+    margin-bottom: 30px;
+  }
+  .about .all .element div span {
+    top: 12% !important;
+  }
+  .about .all .element div span svg {
+    width: 100% !important;
+  }
+  .about .all .element div p {
+    font-size: 13px !important;
+    bottom: 10% !important;
+  }
+  .about .all .element .special span {
+    bottom: 12% !important;
+  }
+  .about .all .element .special span svg {
+    width: 90% !important;
+  }
+  .about .all .element .special p {
+    font-size: 13px !important;
+    top: 10% !important;
   }
 }
 @media (min-width: 576px) and (max-width: 992px) {
@@ -1006,5 +1147,55 @@ input::-webkit-inner-spin-button {
     bottom: 17% !important;
     left: 8% !important;
     width: 18% !important;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .order-md-2 {
+    order: 2;
+  }
+  .order-md-3 {
+    order: 3;
+  }
+  .order-md-4 {
+    order: 4;
+  }
+  .about {
+    margin-top: 25px !important;
+  }
+  .about .all {
+    row-gap: 0px !important;
+  }
+  .about .all h1 {
+    margin-bottom: 20px !important;
+    font-size: 35px !important;
+  }
+  .about .all .textelement {
+    font-size: 18px !important;
+    margin-bottom: 30px;
+    line-height: 23px !important;
+  }
+  .about .all .element {
+    margin-bottom: 30px;
+  }
+  .about .all .element div span {
+    top: 12% !important;
+  }
+  .about .all .element div span svg {
+    width: 100% !important;
+  }
+  .about .all .element div p {
+    font-size: 18px !important;
+    bottom: 10% !important;
+  }
+  .about .all .element .special span {
+    bottom: 12% !important;
+  }
+  .about .all .element .special span svg {
+    width: 90% !important;
+  }
+  .about .all .element .special p {
+    font-size: 18px !important;
+    top: 10% !important;
   }
 }/*# sourceMappingURL=App.css.map */
