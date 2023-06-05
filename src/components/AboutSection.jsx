@@ -44,7 +44,7 @@ const AboutSection = () => {
                         <span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 111 87"
+                                viewBox="0 0 100 87"
                             >
                                 <g>
                                     <path d="M20.1599 69.8787H17.9311V92H20.1599V69.8787Z" />

@@ -801,7 +801,7 @@ input::-webkit-inner-spin-button {
                     padding: 3% 8%;
                     border-radius: 50px;
                     background-color: #00FF00;
-                    box-shadow: 7px 7px 2px 0px var(--textColor);
+                    box-shadow: 7px 7px 0px 0px var(--textColor);
                 }
 
                 &:nth-child(4) {
@@ -814,7 +814,7 @@ input::-webkit-inner-spin-button {
                     padding: 3% 8%;
                     border-radius: 50px;
                     background-color: #00FF00;
-                    box-shadow: -7px -7px 2px 0px var(--textColor);
+                    box-shadow: -7px -7px 0px 0px var(--textColor);
                 }
 
                 &:nth-child(5) {
@@ -980,7 +980,7 @@ input::-webkit-inner-spin-button {
 
                     svg {
                         fill: var(--textColor);
-                        width: 80%;
+                        width: 60%;
                     }
                 }
 
@@ -1116,14 +1116,14 @@ input::-webkit-inner-spin-button {
                     &:nth-child(2) {
                         font-size: 25px !important;
                         padding: 4% 8% !important;
-                        box-shadow: 5px 5px 2px 0px var(--textColor) !important;
+                        box-shadow: 5px 5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(4) {
                         color: black;
                         font-size: 24px !important;
                         padding: 4% 8% !important;
-                        box-shadow: -5px -5px 2px 0px var(--textColor) !important;
+                        box-shadow: -5px -5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(5) {
@@ -1236,10 +1236,10 @@ input::-webkit-inner-spin-button {
 
                 .special {
                     span {
-                        bottom: 12% !important;
+                        bottom: 0% !important;
 
                         svg {
-                            width: 90% !important;
+                            width: 80% !important;
                         }
                     }
 
@@ -1370,14 +1370,14 @@ input::-webkit-inner-spin-button {
                     &:nth-child(2) {
                         font-size: 22px !important;
                         padding: 4% 8% !important;
-                        box-shadow: 5px 5px 2px 0px var(--textColor) !important;
+                        box-shadow: 5px 5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(4) {
                         color: black;
                         font-size: 22px !important;
                         padding: 4% 8% !important;
-                        box-shadow: -5px -5px 2px 0px var(--textColor) !important;
+                        box-shadow: -5px -5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(5) {
@@ -1476,7 +1476,7 @@ input::-webkit-inner-spin-button {
                 div {
 
                     span {
-                        top: 12% !important;
+                        top: 20% !important;
 
                         svg {
                             width: 100% !important;
@@ -1484,22 +1484,22 @@ input::-webkit-inner-spin-button {
                     }
 
                     p {
-                        font-size: 18px !important;
+                        font-size: 25px !important;
                         bottom: 10% !important;
                     }
                 }
 
                 .special {
                     span {
-                        bottom: 12% !important;
+                        bottom: 0% !important;
 
                         svg {
-                            width: 90% !important;
+                            width: 80% !important;
                         }
                     }
 
                     p {
-                        font-size: 18px !important;
+                        font-size: 25px !important;
                         top: 10% !important;
                     }
                 }

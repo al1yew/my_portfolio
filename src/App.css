@@ -646,7 +646,7 @@ input::-webkit-inner-spin-button {
   padding: 3% 8%;
   border-radius: 50px;
   background-color: #00FF00;
-  box-shadow: 7px 7px 2px 0px var(--textColor);
+  box-shadow: 7px 7px 0px 0px var(--textColor);
 }
 .home .all .left p:nth-child(4) {
   color: black;
@@ -660,7 +660,7 @@ input::-webkit-inner-spin-button {
   padding: 3% 8%;
   border-radius: 50px;
   background-color: #00FF00;
-  box-shadow: -7px -7px 2px 0px var(--textColor);
+  box-shadow: -7px -7px 0px 0px var(--textColor);
 }
 .home .all .left p:nth-child(5) {
   font-size: 18px;
@@ -804,7 +804,7 @@ input::-webkit-inner-spin-button {
 }
 .about .all .element .special span svg {
   fill: var(--textColor);
-  width: 80%;
+  width: 60%;
 }
 .about .all .element .special p {
   width: 100%;
@@ -908,13 +908,13 @@ input::-webkit-inner-spin-button {
   .home .all .left p:nth-child(2) {
     font-size: 25px !important;
     padding: 4% 8% !important;
-    box-shadow: 5px 5px 2px 0px var(--textColor) !important;
+    box-shadow: 5px 5px 0px 0px var(--textColor) !important;
   }
   .home .all .left p:nth-child(4) {
     color: black;
     font-size: 24px !important;
     padding: 4% 8% !important;
-    box-shadow: -5px -5px 2px 0px var(--textColor) !important;
+    box-shadow: -5px -5px 0px 0px var(--textColor) !important;
   }
   .home .all .left p:nth-child(5) {
     font-size: 14px !important;
@@ -998,10 +998,10 @@ input::-webkit-inner-spin-button {
     bottom: 10% !important;
   }
   .about .all .element .special span {
-    bottom: 12% !important;
+    bottom: 0% !important;
   }
   .about .all .element .special span svg {
-    width: 90% !important;
+    width: 80% !important;
   }
   .about .all .element .special p {
     font-size: 13px !important;
@@ -1099,13 +1099,13 @@ input::-webkit-inner-spin-button {
   .home .all .left p:nth-child(2) {
     font-size: 22px !important;
     padding: 4% 8% !important;
-    box-shadow: 5px 5px 2px 0px var(--textColor) !important;
+    box-shadow: 5px 5px 0px 0px var(--textColor) !important;
   }
   .home .all .left p:nth-child(4) {
     color: black;
     font-size: 22px !important;
     padding: 4% 8% !important;
-    box-shadow: -5px -5px 2px 0px var(--textColor) !important;
+    box-shadow: -5px -5px 0px 0px var(--textColor) !important;
   }
   .home .all .left p:nth-child(5) {
     font-size: 13px !important;
@@ -1180,23 +1180,23 @@ input::-webkit-inner-spin-button {
     margin-bottom: 30px;
   }
   .about .all .element div span {
-    top: 12% !important;
+    top: 20% !important;
   }
   .about .all .element div span svg {
     width: 100% !important;
   }
   .about .all .element div p {
-    font-size: 18px !important;
+    font-size: 25px !important;
     bottom: 10% !important;
   }
   .about .all .element .special span {
-    bottom: 12% !important;
+    bottom: 0% !important;
   }
   .about .all .element .special span svg {
-    width: 90% !important;
+    width: 80% !important;
   }
   .about .all .element .special p {
-    font-size: 18px !important;
+    font-size: 25px !important;
     top: 10% !important;
   }
 }/*# sourceMappingURL=App.css.map */
