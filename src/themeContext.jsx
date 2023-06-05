@@ -1,12 +1,6 @@
-import {
-    createContext,
-    useContext,
-    useState,
-    useEffect,
-    useCallback,
-} from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
-const AppContext = createContext();
+const ThemeContext = createContext();
 
 const getInitialDarkMode = () => {
     const prefersDarkMode = window.matchMedia(
@@ -18,7 +12,7 @@ const getInitialDarkMode = () => {
     return storedDarkMode || prefersDarkMode;
 };
 
-export const AppProvider = ({ children }) => {
+export const ThemeProvider = ({ children }) => {
     const [isDarkTheme, setIsDarkTheme] = useState(getInitialDarkMode());
 
     const toggleDarkTheme = () => {
@@ -32,15 +26,15 @@ export const AppProvider = ({ children }) => {
     }, [isDarkTheme]);
 
     return (
-        <AppContext.Provider
+        <ThemeContext.Provider
             value={{
                 isDarkTheme,
                 toggleDarkTheme,
             }}
         >
             {children}
-        </AppContext.Provider>
+        </ThemeContext.Provider>
     );
 };
 
-export const useGlobalContext = () => useContext(AppContext);
+export const useThemeContext = () => useContext(ThemeContext);

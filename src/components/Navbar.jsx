@@ -2,13 +2,13 @@ import { links } from "../constants";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
-import { useGlobalContext } from "../context";
+import { useThemeContext } from "../themeContext";
 import logoWhite from "../assets/images/logoW.png";
 import logoBlack from "../assets/images/logoB.png";
 import { useRef, useEffect, useState } from "react";
 
 const Navbar = () => {
-    const { isDarkTheme, toggleDarkTheme } = useGlobalContext();
+    const { isDarkTheme, toggleDarkTheme } = useThemeContext();
 
     const sidebarRef = useRef(null);
 
