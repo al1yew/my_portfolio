@@ -1247,22 +1247,6 @@ input::-webkit-inner-spin-button {
             }
         }
     }
-
-    .order-1 {
-        order: 1;
-    }
-
-    .order-2 {
-        order: 2;
-    }
-
-    .order-3 {
-        order: 3;
-    }
-
-    .order-4 {
-        order: 4;
-    }
 }
 
 @media(min-width:576px) and (max-width:992px) {
@@ -1488,21 +1472,5 @@ input::-webkit-inner-spin-button {
                 }
             }
         }
-    }
-
-    .order-md-1 {
-        order: 1;
-    }
-
-    .order-md-2 {
-        order: 2;
-    }
-
-    .order-md-3 {
-        order: 3;
-    }
-
-    .order-md-4 {
-        order: 4;
     }
 }
