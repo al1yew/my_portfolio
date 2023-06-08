@@ -32,6 +32,7 @@ p {
 
 body {
     scroll-behavior: smooth;
+    transition: var(--darkModeTransition);
 }
 
 :root {
@@ -529,10 +530,10 @@ body {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 9999999999999;
+    z-index: 999999999999;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 1) !important;
+    background-color: var(--backgroundColor);
 
     .preloader {
         border: 10px solid #f3f3f3;
@@ -618,14 +619,6 @@ input::-webkit-inner-spin-button {
 
 //#endregion scrollbar
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -636,7 +629,6 @@ main {
     font-size: 20px;
     padding: 0;
     margin: 0;
-    transition: 0.3s ease-in-out;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -645,20 +637,24 @@ main {
     border-bottom: 2px solid var(--textColor);
     color: var(--textColor);
     background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
 
     .all {
-        width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1440px;
+        color: var(--textColor);
+        background-color: var(--backgroundColor);
+        transition: var(--darkModeTransition);
+        padding: 0;
+        margin: 0;
 
         .imgkeeper {
             transition: 0.3s ease-in-out;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 110px;
+            width: 100px;
             padding: 9px 0;
 
             a {
@@ -683,7 +679,8 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 6px;
+            margin: 0;
+            padding: 0;
 
             li {
                 position: relative;
@@ -732,12 +729,16 @@ main {
             display: flex;
             justify-content: end;
             align-items: center;
+            padding: 0;
+            margin: 0;
 
             span {
                 cursor: pointer;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 0;
+                margin: 0;
 
                 svg {
                     transition: 0.3s ease-in-out;
@@ -771,30 +772,30 @@ main {
 }
 
 .home {
-    margin-top: 70px;
-    width: 100%;
+    margin-top: 65px;
     padding: 0;
-    height: 92vh;
-    max-width: 1440px;
-    max-height: 600px;
+    width: 100%;
+    height: max-content;
 
     .all {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 0;
         margin: 0;
-        height: 100%;
 
         .left {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-direction: column;
-            padding: 20px;
-            padding-left: 5%;
-            padding-right: 3%;
-            height: 100%;
+            height: calc(100vh - 65px);
+            max-height: 650px;
+            min-height: 570px;
+            padding: 0;
+            margin: 0;
+            padding-top: 20px;
+            padding-left: 70px;
+            padding-right: 30px;
 
             p {
                 font-family: var(--pp_regular);
@@ -840,6 +841,8 @@ main {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 0;
+                margin: 0;
 
                 button {
                     padding: 20px 0;
@@ -872,7 +875,8 @@ main {
         .right {
             background-color: var(--otherBackgroundColor);
             position: relative;
-            height: 100%;
+            padding: 0;
+            margin: 0;
 
             .imgkeeper {
                 position: absolute;
@@ -1015,41 +1019,45 @@ main {
 
 @media (max-width:576px) {
     .header {
-        font-size: 15px !important;
+        font-size: 15px;
 
         .all {
             position: relative;
 
             .imgkeeper {
-                order: 2 !important;
-                padding: 7px 0 !important;
-                width: 90px !important;
+                order: 2;
+                padding: 7px 0;
+                width: 70px;
             }
 
             .comp_ul {
-                display: none !important;
+                display: none;
             }
 
             .theme {
-                order: 1 !important;
-                justify-content: start !important;
+                order: 1;
+                justify-content: start;
+                padding: 0;
+                margin: 0;
 
                 span {
                     svg {
-                        font-size: 26px !important;
+                        font-size: 26px;
                     }
                 }
             }
 
             .hamburger {
-                order: 3 !important;
+                order: 3;
                 display: flex;
                 justify-content: end;
                 align-items: center;
+                padding: 0;
+                margin: 0;
 
                 svg {
-                    color: var(--textColor) !important;
-                    font-size: 32px !important;
+                    color: var(--textColor);
+                    font-size: 32px;
                 }
             }
 
@@ -1062,6 +1070,8 @@ main {
                 transform: translateX(50%);
                 width: 95%;
                 height: 250px;
+                padding: 0;
+                margin: 0;
                 background-color: var(--backgroundColor);
                 color: var(--textColor);
                 border: 1px solid #00FF00;
@@ -1073,6 +1083,8 @@ main {
                     list-style: none;
                     height: 100%;
                     width: 100%;
+                    margin: 0;
+                    padding: 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -1103,115 +1115,98 @@ main {
     .thin_header {
         .all {
             .imgkeeper {
-                width: 60px !important;
+                width: 60px;
             }
 
             .theme {
                 svg {
-                    font-size: 30px !important;
+                    font-size: 30px;
                 }
             }
         }
     }
 
     .home {
-        margin-top: 57px !important;
-        height: 130vh !important;
-        max-width: unset !important;
-        max-height: unset !important;
+        margin-top: 48px;
 
         .all {
 
             .left {
-                padding: 20px 5% !important;
-                height: 60% !important;
+                height: 450px;
+                padding: 20px 5%;
+                min-height: unset;
+                max-height: unset;
 
                 p {
-                    font-size: 20px !important;
+                    font-size: 20px;
 
                     &:nth-child(2) {
-                        font-size: 25px !important;
-                        padding: 4% 8% !important;
+                        font-size: 25px;
+                        padding: 4% 8%;
                         box-shadow: 5px 5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(4) {
                         color: black;
-                        font-size: 24px !important;
-                        padding: 4% 8% !important;
+                        font-size: 24px;
+                        padding: 4% 8%;
                         box-shadow: -5px -5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(5) {
-                        font-size: 14px !important;
-                        line-height: 20px !important;
+                        font-size: 14px;
+                        line-height: 20px;
                     }
                 }
 
                 .bottom {
-                    padding: 0 !important;
+                    padding: 0;
 
                     button {
-                        padding: 12px 0 !important;
-                        font-size: 14px !important;
+                        padding: 12px 0;
+                        font-size: 14px;
                     }
 
                     .icons {
-                        column-gap: 18px !important;
-                        padding: 0 !important;
+                        column-gap: 18px;
+                        padding: 0;
 
                         svg {
-                            width: 28px !important;
-                            height: 28px !important;
+                            width: 30px;
+                            height: 30px;
                         }
                     }
                 }
             }
 
             .right {
-                height: 40% !important;
+                height: 400px;
 
                 .imgkeeper {
                     &:nth-child(1) {
-                        top: 7% !important;
-                        left: 7% !important;
+                        top: 7%;
+                        left: 7%;
                     }
 
                     &:nth-child(2) {
-                        top: 7% !important;
-                        right: 7% !important;
-                        width: 25% !important;
+                        top: 7%;
+                        right: 7%;
+                        width: 25%;
                     }
 
                     &:nth-child(3) {
-                        right: 9% !important;
-                        width: 13% !important;
+                        right: 9%;
+                        width: 13%;
                     }
 
                     &:nth-child(4) {
-                        bottom: 17% !important;
-                        left: 8% !important;
-                        width: 13% !important;
+                        bottom: 17%;
+                        left: 8%;
+                        width: 13%;
                     }
                 }
             }
         }
-    }
-
-    .order-1 {
-        order: 1;
-    }
-
-    .order-2 {
-        order: 2;
-    }
-
-    .order-3 {
-        order: 3;
-    }
-
-    .order-4 {
-        order: 4;
     }
 
     .about {
@@ -1269,45 +1264,65 @@ main {
             }
         }
     }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+
+    .order-4 {
+        order: 4;
+    }
 }
 
 @media(min-width:576px) and (max-width:992px) {
     .header {
-        font-size: 20px !important;
+        font-size: 18px;
 
         .all {
             position: relative;
 
             .imgkeeper {
-                order: 2 !important;
-                padding: 9px 0 !important;
-                width: 100px !important;
+                order: 2;
+                padding: 7px 0;
+                width: 80px;
             }
 
             .comp_ul {
-                display: none !important;
+                display: none;
             }
 
             .theme {
-                order: 1 !important;
-                justify-content: start !important;
+                order: 1;
+                justify-content: start;
+                padding: 0;
+                margin: 0;
 
                 span {
                     svg {
-                        font-size: 26px !important;
+                        font-size: 26px;
                     }
                 }
             }
 
             .hamburger {
-                order: 3 !important;
+                order: 3;
                 display: flex;
                 justify-content: end;
                 align-items: center;
+                padding: 0;
+                margin: 0;
 
                 svg {
-                    color: var(--textColor) !important;
-                    font-size: 32px !important;
+                    color: var(--textColor);
+                    font-size: 32px;
                 }
             }
 
@@ -1320,6 +1335,8 @@ main {
                 transform: translateX(50%);
                 width: 95%;
                 height: 250px;
+                padding: 0;
+                margin: 0;
                 background-color: var(--backgroundColor);
                 color: var(--textColor);
                 border: 1px solid #00FF00;
@@ -1331,13 +1348,15 @@ main {
                     list-style: none;
                     height: 100%;
                     width: 100%;
+                    margin: 0;
+                    padding: 0;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     flex-direction: column;
 
                     li {
-                        font-size: 20px;
+                        font-size: 18px;
 
                         a {
                             color: var(--textColor);
@@ -1373,104 +1392,85 @@ main {
     }
 
     .home {
-        margin-top: 65px !important;
-        height: 100vh !important;
-        max-width: unset !important;
-        max-height: unset !important;
+        margin-top: 53px;
 
         .all {
 
             .left {
-                padding: 20px 5% !important;
-                height: 100% !important;
+                height: 500px;
+                min-height: unset;
+                max-height: unset;
+                padding: 20px 5%;
 
                 p {
-                    font-size: 18px !important;
+                    font-size: 20px;
 
                     &:nth-child(2) {
-                        font-size: 22px !important;
-                        padding: 4% 8% !important;
+                        font-size: 24px;
+                        padding: 4% 8%;
                         box-shadow: 5px 5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(4) {
                         color: black;
-                        font-size: 22px !important;
-                        padding: 4% 8% !important;
+                        font-size: 23px;
+                        padding: 4% 8%;
                         box-shadow: -5px -5px 0px 0px var(--textColor) !important;
                     }
 
                     &:nth-child(5) {
-                        font-size: 13px !important;
-                        line-height: 20px !important;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
 
                 .bottom {
-                    padding: 0 !important;
+                    padding: 0;
 
                     button {
-                        padding: 12px 0 !important;
-                        font-size: 12px !important;
+                        padding: 12px 0;
+                        font-size: 12px;
                     }
 
                     .icons {
-                        column-gap: 18px !important;
-                        padding: 0 !important;
+                        column-gap: 10px;
+                        padding: 0;
 
                         svg {
-                            width: 20px !important;
-                            height: 20px !important;
+                            width: 30px;
+                            height: 30px;
                         }
                     }
                 }
             }
 
             .right {
-                height: 100% !important;
 
                 .imgkeeper {
                     &:nth-child(1) {
-                        top: 7% !important;
-                        width: 28% !important;
-                        left: 7% !important;
+                        top: 7%;
+                        left: 7%;
                     }
 
                     &:nth-child(2) {
-                        top: 7% !important;
-                        right: 7% !important;
-                        width: 25% !important;
+                        top: 7%;
+                        right: 7%;
+                        width: 25%;
                     }
 
                     &:nth-child(3) {
-                        right: 9% !important;
-                        width: 18% !important;
+                        right: 9%;
+                        width: 13%;
                     }
 
                     &:nth-child(4) {
-                        bottom: 17% !important;
-                        left: 8% !important;
-                        width: 18% !important;
+                        bottom: 17%;
+                        left: 8%;
+                        width: 13%;
                     }
                 }
             }
         }
-    }
-
-    .order-md-1 {
-        order: 1;
-    }
-
-    .order-md-2 {
-        order: 2;
-    }
-
-    .order-md-3 {
-        order: 3;
-    }
-
-    .order-md-4 {
-        order: 4;
     }
 
     .about {
@@ -1527,5 +1527,21 @@ main {
                 }
             }
         }
+    }
+
+    .order-md-1 {
+        order: 1;
+    }
+
+    .order-md-2 {
+        order: 2;
+    }
+
+    .order-md-3 {
+        order: 3;
+    }
+
+    .order-md-4 {
+        order: 4;
     }
 }

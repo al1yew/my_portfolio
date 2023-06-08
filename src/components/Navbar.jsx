@@ -42,70 +42,69 @@ const Navbar = () => {
     }, [isSidebarOpen]);
 
     return (
-        <header
-            id="header"
-            className={isScroll ? "header thin_header" : "header"}
-        >
-            <div className="all">
-                <div className="imgkeeper">
-                    <a href="#Home">
-                        <img
-                            src={isDarkTheme ? logoBlack : logoWhite}
-                            alt="vasif aliyev"
-                        />
-                    </a>
-                </div>
-                <ul className="comp_ul col-lg-7 col-md-9">
-                    {links.map((link, i) => {
-                        return (
-                            <li key={i}>
-                                <a href={"#" + link}>{link}</a>
-                            </li>
-                        );
-                    })}
-                </ul>
-                <div className="theme col-lg-1 col-2 col-md-1">
-                    {isDarkTheme ? (
-                        <span onClick={toggleDarkTheme}>
-                            <BsSun />
-                        </span>
-                    ) : (
-                        <span onClick={toggleDarkTheme}>
-                            <BsMoon />
-                        </span>
-                    )}
-                </div>
-                <div className="hamburger col-2 col-md-1">
-                    {isSidebarOpen ? (
-                        <AiOutlineClose
-                            onClick={() => setIsSidebarOpen(false)}
-                        />
-                    ) : (
-                        <RxHamburgerMenu
-                            onClick={() => setIsSidebarOpen(true)}
-                        />
-                    )}
-                </div>
-                <div
-                    ref={sidebarRef}
-                    className={
-                        isSidebarOpen
-                            ? "sidebar open_sidebar"
-                            : "sidebar close_sidebar"
-                    }
-                >
-                    <ul className="tel_ul">
+        <header className={isScroll ? "header thin_header" : "header"}>
+            <div className="container">
+                <div className="row all">
+                    <div className="imgkeeper">
+                        <a href="#Home">
+                            <img
+                                src={isDarkTheme ? logoBlack : logoWhite}
+                                alt="vasif aliyev"
+                            />
+                        </a>
+                    </div>
+                    <ul className="comp_ul col-lg-7 col-md-9">
                         {links.map((link, i) => {
                             return (
-                                <li
-                                    key={i}
-                                    onClick={() => setIsSidebarOpen(false)}
-                                >
+                                <li key={i}>
                                     <a href={"#" + link}>{link}</a>
                                 </li>
                             );
                         })}
                     </ul>
+                    <div className="theme col-lg-1 col-2 col-md-1">
+                        {isDarkTheme ? (
+                            <span onClick={toggleDarkTheme}>
+                                <BsSun />
+                            </span>
+                        ) : (
+                            <span onClick={toggleDarkTheme}>
+                                <BsMoon />
+                            </span>
+                        )}
+                    </div>
+                    <div className="hamburger col-2 col-md-1">
+                        {isSidebarOpen ? (
+                            <AiOutlineClose
+                                onClick={() => setIsSidebarOpen(false)}
+                            />
+                        ) : (
+                            <RxHamburgerMenu
+                                onClick={() => setIsSidebarOpen(true)}
+                            />
+                        )}
+                    </div>
+                    <div
+                        ref={sidebarRef}
+                        className={
+                            isSidebarOpen
+                                ? "sidebar open_sidebar"
+                                : "sidebar close_sidebar"
+                        }
+                    >
+                        <ul className="tel_ul">
+                            {links.map((link, i) => {
+                                return (
+                                    <li
+                                        key={i}
+                                        onClick={() => setIsSidebarOpen(false)}
+                                    >
+                                        <a href={"#" + link}>{link}</a>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>

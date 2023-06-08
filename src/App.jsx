@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Content from "./components/Content";
@@ -5,6 +6,7 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import { ThemeProvider } from "./themeContext";
 import { useEffect, useState } from "react";
+
 function App() {
     const [isLoading, setIsLoading] = useState(true);
 

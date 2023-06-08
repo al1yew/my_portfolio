@@ -20,7 +20,7 @@ const HeroSection = () => {
 
     return (
         <section className="home" id="Home">
-            <div className="all">
+            <div className=" all">
                 <div className="col-lg-6 col-md-6 col-12 left">
                     <p>Hello, My name is</p>
                     <p>Vasif Aliyev</p>
