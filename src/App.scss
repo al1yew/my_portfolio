@@ -1085,6 +1085,59 @@ input::-webkit-inner-spin-button {
                 color: var(--otherTextColor);
             }
         }
+
+        .iteratedskills {
+            margin: 0;
+            padding: 0;
+            margin-top: 30px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+
+            .skill {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid var(--textColor);
+                font-family: var(--pp_plain);
+                padding-top: 100%;
+                position: relative;
+                transition: 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.03);
+                    box-shadow: 0px 0px 10px 0px var(--textColor);
+                }
+
+                span {
+                    position: absolute;
+                    top: 15%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        font-size: 40px;
+                    }
+                }
+
+                p {
+                    position: absolute;
+                    bottom: 7%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    width: 90%;
+                    font-size: 17px;
+                }
+            }
+        }
     }
 }
 
@@ -1313,6 +1366,64 @@ input::-webkit-inner-spin-button {
             }
         }
     }
+
+    .skills {
+        margin-top: 30px;
+
+        .all {
+            h1 {
+                font-size: 30px;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 15px;
+                justify-content: unset;
+                align-items: center;
+                flex-wrap: unset;
+
+                li {
+                    padding: 7px 10px 4px 10px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                .active {
+                    background-color: #00FF00;
+                    color: var(--otherTextColor);
+                }
+            }
+
+            .iteratedskills {
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 15px;
+
+                .skill {
+
+                    span {
+                        top: 10%;
+
+                        svg {
+                            font-size: 35px;
+                        }
+                    }
+
+                    p {
+                        bottom: 8%;
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        transform: unset;
+                        box-shadow: unset;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(min-width:576px) and (max-width:992px) {
@@ -1534,6 +1645,64 @@ input::-webkit-inner-spin-button {
 
                     p {
                         font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .skills {
+        margin-top: 30px;
+
+        .all {
+            h1 {
+                font-size: 40px;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 15px;
+                justify-content: unset;
+                align-items: center;
+                flex-wrap: unset;
+
+                li {
+                    padding: 7px 10px 4px 10px;
+                    text-align: center;
+                    font-size: 16px;
+                }
+
+                .active {
+                    background-color: #00FF00;
+                    color: var(--otherTextColor);
+                }
+            }
+
+            .iteratedskills {
+                margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 15px;
+
+                .skill {
+
+                    span {
+                        top: 15%;
+
+                        svg {
+                            font-size: 50px;
+                        }
+                    }
+
+                    p {
+                        bottom: 10%;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        transform: unset;
+                        box-shadow: unset;
                     }
                 }
             }
