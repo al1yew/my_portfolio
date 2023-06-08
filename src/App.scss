@@ -918,12 +918,7 @@ input::-webkit-inner-spin-button {
 
 .about {
     margin-top: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    max-height: 600px;
+    padding: 0;
 
     .all {
         font-family: var(--pp_regular);
@@ -931,11 +926,12 @@ input::-webkit-inner-spin-button {
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        width: 90%;
-        row-gap: 30px;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
 
         h1 {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             text-align: center;
             font-size: 50px;
             width: 100%;
@@ -951,14 +947,19 @@ input::-webkit-inner-spin-button {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            padding: 0;
+            margin: 0;
             flex-wrap: wrap;
 
             div {
                 position: relative;
+                padding: 0;
+                margin: 0;
 
                 span {
                     position: absolute;
+                    padding: 0;
+                    margin: 0;
                     top: 15%;
                     left: 50%;
                     display: flex;
@@ -986,10 +987,14 @@ input::-webkit-inner-spin-button {
 
             .special {
                 position: relative;
+                padding: 0;
+                margin: 0;
 
                 span {
                     position: absolute;
                     bottom: 0%;
+                    padding: 0;
+                    margin: 0;
                     left: 50%;
                     display: flex;
                     justify-content: center;
@@ -1210,55 +1215,33 @@ input::-webkit-inner-spin-button {
     }
 
     .about {
-        margin-top: 20px !important;
-        max-width: unset !important;
-        max-height: unset !important;
+        margin-top: 30px;
+        padding: 0;
 
         .all {
-            row-gap: 0px !important;
 
             h1 {
-                margin-bottom: 20px !important;
-                font-size: 30px !important;
+                margin-bottom: 0px;
+                font-size: 40px;
             }
 
             .textelement {
-                font-size: 15px !important;
-                margin-bottom: 30px;
-                line-height: 23px !important;
+                font-size: 15px;
             }
 
             .element {
-                margin-bottom: 30px;
 
                 div {
 
-                    span {
-                        top: 12% !important;
-
-                        svg {
-                            width: 100% !important;
-                        }
-                    }
-
                     p {
-                        font-size: 13px !important;
-                        bottom: 10% !important;
+                        font-size: 15px;
                     }
                 }
 
                 .special {
-                    span {
-                        bottom: 0% !important;
-
-                        svg {
-                            width: 80% !important;
-                        }
-                    }
 
                     p {
-                        font-size: 13px !important;
-                        top: 10% !important;
+                        font-size: 15px;
                     }
                 }
             }
@@ -1474,55 +1457,33 @@ input::-webkit-inner-spin-button {
     }
 
     .about {
-        margin-top: 25px !important;
-        max-width: unset !important;
-        max-height: unset !important;
+        margin-top: 30px;
+        padding: 0;
 
         .all {
-            row-gap: 0px !important;
 
             h1 {
-                margin-bottom: 20px !important;
-                font-size: 35px !important;
+                margin-bottom: 0px;
+                font-size: 40px;
             }
 
             .textelement {
-                font-size: 18px !important;
-                margin-bottom: 30px;
-                line-height: 23px !important;
+                font-size: 15px;
             }
 
             .element {
-                margin-bottom: 30px;
 
                 div {
 
-                    span {
-                        top: 20% !important;
-
-                        svg {
-                            width: 100% !important;
-                        }
-                    }
-
                     p {
-                        font-size: 25px !important;
-                        bottom: 10% !important;
+                        font-size: 15px;
                     }
                 }
 
                 .special {
-                    span {
-                        bottom: 0% !important;
-
-                        svg {
-                            width: 80% !important;
-                        }
-                    }
 
                     p {
-                        font-size: 25px !important;
-                        top: 10% !important;
+                        font-size: 15px;
                     }
                 }
             }
