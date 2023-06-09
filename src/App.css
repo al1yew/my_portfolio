@@ -1000,6 +1000,9 @@ input::-webkit-inner-spin-button {
   background-color: #00FF00;
   color: var(--otherTextColor);
 }
+.projects .all .slick-dots {
+  bottom: -30px;
+}
 .projects .all .slick-dots li {
   background-color: var(--otherBackgroundColor);
 }

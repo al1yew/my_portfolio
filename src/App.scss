@@ -1195,6 +1195,8 @@ input::-webkit-inner-spin-button {
         }
 
         .slick-dots {
+            bottom: -30px;
+
             li {
                 background-color: var(--otherBackgroundColor);
 
