@@ -2,7 +2,7 @@ import { useState } from "react";
 import { skills } from "../constants";
 
 const SkillsSection = () => {
-    const [category, setCategory] = useState("all");
+    const [category, setCategory] = useState("C#");
     const categories = ["All", ...new Set(skills.map((x) => x.category))];
 
     const filteredSkills =

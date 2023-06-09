@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar";
 import Content from "./components/Content";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
-import { ThemeProvider } from "./themeContext";
 import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -21,11 +21,14 @@ function App() {
     return isLoading ? (
         <Preloader />
     ) : (
-        <ThemeProvider>
+        <BrowserRouter>
             <Navbar />
-            <Content />
+            <Routes>
+                <Route path="/" element={<Content />} />
+                {/* <Route path="/:id" element={<ProjectDetail />} /> */}
+            </Routes>
             <Footer />
-        </ThemeProvider>
+        </BrowserRouter>
     );
 }
 

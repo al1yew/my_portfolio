@@ -1,6 +1,7 @@
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillsSection";
+import ProjectsSection from "./ProjectsSection";
 
 const Content = () => {
     return (
@@ -8,6 +9,7 @@ const Content = () => {
             <HeroSection />
             <AboutSection />
             <SkillsSection />
+            <ProjectsSection />
         </main>
     );
 };
