@@ -1001,14 +1001,13 @@ input::-webkit-inner-spin-button {
   color: var(--otherTextColor);
 }
 .projects .all .slick-dots {
-  bottom: -30px;
+  bottom: -40px;
 }
 .projects .all .slick-dots li {
   background-color: var(--otherBackgroundColor);
 }
-.projects .all .slick-dots li button {
-  opacity: 0;
-  visibility: hidden;
+.projects .all .slick-dots li button:before {
+  color: var(--textColor);
 }
 .projects .all .slick-next {
   background-color: var(--backgroundColor);
@@ -1016,7 +1015,14 @@ input::-webkit-inner-spin-button {
   color: var(--textColor);
   width: 35px;
   height: 35px;
-  right: -40px;
+  right: -20px;
+}
+.projects .all .slick-next::before {
+  display: none;
+}
+.projects .all .slick-next svg {
+  width: 35px;
+  height: 35px;
 }
 .projects .all .slick-prev {
   background-color: var(--backgroundColor);
@@ -1024,11 +1030,18 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
   width: 35px;
   height: 35px;
-  left: -40px;
+  left: -20px;
+}
+.projects .all .slick-prev::before {
+  display: none;
+}
+.projects .all .slick-prev svg {
+  width: 35px;
+  height: 35px;
 }
 .projects .all .iteratedprojects {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 .projects .all .iteratedprojects .project {
   padding: 0;
@@ -1043,13 +1056,16 @@ input::-webkit-inner-spin-button {
   min-height: 430px;
   position: relative;
 }
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .projects .all .iteratedprojects .project .projectitems {
+    min-height: 500px;
+  }
+}
 .projects .all .iteratedprojects .project .projectitems .imgkeeper {
   overflow: hidden;
   -webkit-clip-path: polygon(15% 0, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0 15%);
           clip-path: polygon(15% 0, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0 15%);
-  background-color: var(--otherBackgroundColor);
   position: relative;
-  padding-top: 100%;
   width: 100%;
 }
 .projects .all .iteratedprojects .project .projectitems .imgkeeper span {
@@ -1104,6 +1120,33 @@ input::-webkit-inner-spin-button {
 }
 .projects .all .iteratedprojects .project .projectitems .links .projectlink {
   text-align: end;
+}
+
+.certificates {
+  margin-top: 80px;
+  padding: 0;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  width: 100%;
+  font-family: var(--pp_regular);
+}
+.certificates .all {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+}
+.certificates .all h1 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
 }
 
 @media (max-width: 576px) {

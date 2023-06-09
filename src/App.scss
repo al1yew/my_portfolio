@@ -1195,14 +1195,15 @@ input::-webkit-inner-spin-button {
         }
 
         .slick-dots {
-            bottom: -30px;
+            bottom: -40px;
 
             li {
                 background-color: var(--otherBackgroundColor);
 
                 button {
-                    opacity: 0;
-                    visibility: hidden;
+                    &:before {
+                        color: var(--textColor);
+                    }
                 }
             }
         }
@@ -1213,7 +1214,16 @@ input::-webkit-inner-spin-button {
             color: var(--textColor);
             width: 35px;
             height: 35px;
-            right: -40px;
+            right: -20px;
+
+            &::before {
+                display: none;
+            }
+
+            svg {
+                width: 35px;
+                height: 35px;
+            }
         }
 
         .slick-prev {
@@ -1222,12 +1232,21 @@ input::-webkit-inner-spin-button {
             transition: var(--darkModeTransition);
             width: 35px;
             height: 35px;
-            left: -40px;
+            left: -20px;
+
+            &::before {
+                display: none;
+            }
+
+            svg {
+                width: 35px;
+                height: 35px;
+            }
         }
 
         .iteratedprojects {
             margin: 0;
-            padding: 0;
+            padding: 0 20px;
 
             .project {
                 padding: 0;
@@ -1242,12 +1261,14 @@ input::-webkit-inner-spin-button {
                     min-height: 430px;
                     position: relative;
 
+                    @media (min-width: 1200px) and (max-width: 1400px) {
+                        min-height: 500px;
+                    }
+
                     .imgkeeper {
                         overflow: hidden;
                         clip-path: polygon(15% 0, 85% 0%, 100% 15%, 100% 85%, 85% 100%, 15% 100%, 0% 85%, 0 15%);
-                        background-color: var(--otherBackgroundColor);
                         position: relative;
-                        padding-top: 100%;
                         width: 100%;
 
                         span {
@@ -1314,6 +1335,35 @@ input::-webkit-inner-spin-button {
                     }
                 }
             }
+        }
+    }
+}
+
+.certificates {
+    margin-top: 80px;
+    padding: 0;
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
+    width: 100%;
+    font-family: var(--pp_regular);
+
+    .all {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: var(--textColor);
+        background-color: var(--backgroundColor);
+        transition: var(--darkModeTransition);
+
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 50px;
+            width: 100%;
         }
     }
 }

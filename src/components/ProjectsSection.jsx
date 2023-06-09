@@ -4,7 +4,11 @@ import Slider from "react-slick";
 import { useState } from "react";
 import { projects } from "../constants";
 import { Link } from "react-router-dom";
-import { BiSkipNextCircle, BiSkipPreviousCircle } from "react-icons/bi";
+import NextButton from "./NextButton";
+import PrevButton from "./PrevButton";
+import { BiSkipPreviousCircle, BiSkipNextCircle } from "react-icons/bi";
+import image from "../assets/images/square.jpg";
+
 const ProjectsSection = () => {
     const [category, setCategory] = useState("all");
     const categories = ["All", ...new Set(projects.map((x) => x.category))];
@@ -13,15 +17,29 @@ const ProjectsSection = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 2,
         fade: false,
         autoplay: false,
         autoplaySpeed: 7000,
         pauseOnHover: true,
-        nextArrow: <BiSkipNextCircle />,
-        prevArrow: <BiSkipPreviousCircle />,
+        nextArrow: <NextButton />,
+        prevArrow: <PrevButton />,
         responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    fade: false,
+                    autoplay: false,
+                    autoplaySpeed: 7000,
+                    pauseOnHover: true,
+                },
+            },
             {
                 breakpoint: 992,
                 settings: {
@@ -29,7 +47,7 @@ const ProjectsSection = () => {
                     infinite: true,
                     speed: 500,
                     slidesToShow: 2,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                     fade: false,
                     autoplay: false,
                     autoplaySpeed: 7000,
@@ -86,10 +104,10 @@ const ProjectsSection = () => {
                             <div className="project" key={project.id}>
                                 <div className="projectitems">
                                     <div className="imgkeeper">
-                                        {/* <img
-                                        src={project.image}
-                                        alt={project.projectName}
-                                    /> */}
+                                        <img
+                                            src={image}
+                                            alt={project.projectName}
+                                        />
                                         <span>
                                             Here <br /> will be <br /> the image
                                         </span>

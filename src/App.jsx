@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Content from "./components/Content";
+import MainPage from "./pages/MainPage";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
@@ -24,7 +24,7 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Content />} />
+                <Route path="/" element={<MainPage />} />
                 {/* <Route path="/:id" element={<ProjectDetail />} /> */}
             </Routes>
             <Footer />
