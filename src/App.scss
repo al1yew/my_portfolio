@@ -1696,6 +1696,22 @@ input::-webkit-inner-spin-button {
                 font-size: 30px;
             }
 
+            .categories {
+                column-gap: 15px;
+
+                li {
+                    padding: 8px 4px 5px 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .active {
+                    background-color: #00FF00;
+                    color: var(--otherTextColor);
+                }
+            }
+
             .slick-dots {
                 display: none !important;
             }

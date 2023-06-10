@@ -1396,6 +1396,20 @@ input::-webkit-inner-spin-button {
     margin-bottom: 30px;
     font-size: 30px;
   }
+  .projects .all .categories {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  .projects .all .categories li {
+    padding: 8px 4px 5px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .all .categories .active {
+    background-color: #00FF00;
+    color: var(--otherTextColor);
+  }
   .projects .all .slick-dots {
     display: none !important;
   }
