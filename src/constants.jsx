@@ -212,7 +212,7 @@ export const projects = [
         category: "Full Stack",
         projectName: "BP Manual Risk Handling Tool",
         smallDescription:
-            "React + .NET project for manual risk handling, ensuring employee safety by calculating risk probabilities.",
+            "Manual risk handling tool for managing employee safety and risk.",
         longDescription:
             "Introducing the innovative project by BP AGT Region Health Team: a collaboration between React and .NET technologies. Developed under the guidance of BP AGT Health Team worker, this powerful solution prioritizes employee safety by assessing and managing potential risks in the workplace. By leveraging React and .NET, we have created an efficient system that calculates the probability of risks based on key factors like weight of carried items, distance traveled, and task frequency per hour. Our dedicated admin area empowers BP administrators to effortlessly observe worker assessments and manage the project's database. With a dedicated admin area, BP administrators can effortlessly monitor worker assessments and manage the project's database.",
         technologies: [
@@ -276,8 +276,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "To ... List",
-        smallDescription:
-            "To-do list app with multiple task categories and user-friendly task management.",
+        smallDescription: "Multiple task categories app.",
         longDescription:
             "Introducing \"To ... List\", an intuitive to-do list application built with React. This app goes beyond a simple to-do list, offering users the ability to manage various task categories like 'to go,' 'to buy,' 'to create,' 'to achieve,' and more. Leveraging the power of React and CSS, \"To ... List\" provides a seamless user experience with smooth task updates and deletions. By utilizing the 'useReducer' hook, the app efficiently manages state changes and ensures optimal performance. Additionally, all user data is stored securely within the browser's local storage, allowing users to seamlessly access and organize their tasks while managing their time effectively. Experience hassle-free task management with \"To ... List\"!",
         technologies: ["React"],
@@ -289,7 +288,7 @@ export const projects = [
         category: "Front End",
         projectName: "Customs Taxes Calculator",
         smallDescription:
-            "A structured customs calculator for imported vehicles based on Azerbaijan's customs laws.",
+            "Customs calculator for imported vehicles based on Azerbaijan's customs laws.",
         longDescription:
             "Introducing Rusum.Az, a powerful customs calculator designed for my previous employer. This algorithmic solution is meticulously crafted based on the customs code and laws of Azerbaijan Republic. Specifically tailored for imported vehicles, Rusum.Az accurately computes all taxes applicable at the border and post-import. By utilizing various factors and values, it efficiently manages the final cost of taxes, including intermediate taxes that contribute to the overall result. The convenience and reliability of Rusum.Az ensures precise tax calculations, facilitating a streamlined and transparent process for the importation of automobiles.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
@@ -357,20 +356,20 @@ export const projects = [
         longDescription:
             "Embark on a visual journey with Unsplash Images project. Simply type in a word or phrase, and instantly find a vast collection of stunning images relevant to your provided content. Whether you're seeking inspiration, looking for the perfect visual for your project, or simply enjoying the beauty of photography, Unsplash Images has you covered. Additionally, enhance your viewing experience by switching to the dark mode theme for a sleek and immersive interface. Start exploring and let your imagination roam through captivating visuals!",
         technologies: ["React", "Context API", "React Router"],
-        link: "https://unsplashhproj.netlify.app/",
+        link: "https://vasifunsplash.netlify.app/",
         image: "",
     },
-    {
-        id: nanoid(),
-        category: "Front End",
-        projectName: "Take Color",
-        smallDescription: "Generate color shades and gradients with ease.",
-        longDescription:
-            "Discover the power of color with TakeColor, a versatile web application that simplifies the process of generating color shades and gradients. By simply entering your desired color, TakeColor provides a range of shades and variants, allowing you to explore different color combinations and gradients effortlessly. Whether you're a designer, developer, or simply seeking inspiration, TakeColor empowers you to create visually stunning projects by harnessing the magic of color.",
-        technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
-        link: "https://takecolor.netlify.app/",
-        image: "",
-    },
+    // {
+    //     id: nanoid(),
+    //     category: "Front End",
+    //     projectName: "Take Color",
+    //     smallDescription: "Generate color shades and gradients with ease.",
+    //     longDescription:
+    //         "Discover the power of color with TakeColor, a versatile web application that simplifies the process of generating color shades and gradients. By simply entering your desired color, TakeColor provides a range of shades and variants, allowing you to explore different color combinations and gradients effortlessly. Whether you're a designer, developer, or simply seeking inspiration, TakeColor empowers you to create visually stunning projects by harnessing the magic of color.",
+    //     technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
+    //     link: "https://takecolor.netlify.app/",
+    //     image: "",
+    // },
     {
         id: nanoid(),
         category: "Front End",

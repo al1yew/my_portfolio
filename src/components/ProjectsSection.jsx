@@ -6,8 +6,7 @@ import { projects } from "../constants";
 import { Link } from "react-router-dom";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
-import { BiSkipPreviousCircle, BiSkipNextCircle } from "react-icons/bi";
-import image from "../assets/images/square.jpg";
+import image from "../assets/images/giphy.gif";
 
 const ProjectsSection = () => {
     const [category, setCategory] = useState("all");
@@ -108,13 +107,10 @@ const ProjectsSection = () => {
                                             src={image}
                                             alt={project.projectName}
                                         />
-                                        <span>
-                                            Here <br /> will be <br /> the image
-                                        </span>
                                     </div>
                                     <p>{project.projectName}</p>
                                     <p>{project.smallDescription}</p>
-                                    <div className="links">
+                                    {/* <div className="links">
                                         <a
                                             href={project.link}
                                             target="_blank"
@@ -129,7 +125,7 @@ const ProjectsSection = () => {
                                         >
                                             View Details
                                         </Link>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         ))}
