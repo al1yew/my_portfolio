@@ -625,10 +625,11 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
 }
 .home .all {
+  max-width: 1320px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 auto;
   color: var(--textColor);
   background-color: var(--backgroundColor);
   transition: var(--darkModeTransition);
@@ -643,7 +644,7 @@ input::-webkit-inner-spin-button {
   min-height: 570px;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-left: 70px;
   padding-right: 30px;
 }
