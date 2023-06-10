@@ -925,10 +925,6 @@ input::-webkit-inner-spin-button {
   transition: 0.3s;
   cursor: pointer;
 }
-.skills .all .iteratedskills .skill:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 0px 10px 0px var(--textColor);
-}
 .skills .all .iteratedskills .skill span {
   position: absolute;
   top: 15%;
@@ -1386,10 +1382,6 @@ input::-webkit-inner-spin-button {
     bottom: 8%;
     font-size: 14px;
   }
-  .skills .all .iteratedskills .skill:hover {
-    transform: unset;
-    box-shadow: unset;
-  }
   .projects {
     margin-top: 40px;
   }
@@ -1654,10 +1646,6 @@ input::-webkit-inner-spin-button {
   .skills .all .iteratedskills .skill p {
     bottom: 10%;
     font-size: 16px;
-  }
-  .skills .all .iteratedskills .skill:hover {
-    transform: unset;
-    box-shadow: unset;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
