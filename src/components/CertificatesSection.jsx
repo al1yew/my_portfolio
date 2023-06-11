@@ -28,7 +28,7 @@ const CertificatesSection = () => {
                     <Slider {...settings} className="iteratedcertificates">
                         {certificates.map((cert) => {
                             return (
-                                <div className="cert">
+                                <div className="cert" key={cert.id}>
                                     <div className="certitems">
                                         <div className="col-lg-6 col-md-6 col-sm-12 col-12 imgkeeper">
                                             <img

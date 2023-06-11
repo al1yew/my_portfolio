@@ -1126,6 +1126,22 @@ input::-webkit-inner-spin-button {
   width: -moz-max-content;
   width: max-content;
 }
+.projects .all .slick-dots .slick-active {
+  background-color: #00FF00;
+}
+.projects .all .slick-dots .slick-active:hover {
+  background-color: #00FF00;
+}
+.projects .all .slick-dots .slick-active:hover button::before {
+  color: #00FF00;
+}
+.projects .all .slick-dots .slick-active button {
+  transition: 0.2s;
+}
+.projects .all .slick-dots .slick-active button::before {
+  transition: 0.2s;
+  color: #00FF00;
+}
 .projects .all .slick-dots li {
   background-color: var(--otherBackgroundColor);
   transition: 0.2s;
@@ -1305,6 +1321,22 @@ input::-webkit-inner-spin-button {
   width: -moz-max-content;
   width: max-content;
 }
+.certificates .all .slick-dots .slick-active {
+  background-color: #00FF00;
+}
+.certificates .all .slick-dots .slick-active:hover {
+  background-color: #00FF00;
+}
+.certificates .all .slick-dots .slick-active:hover button::before {
+  color: #00FF00;
+}
+.certificates .all .slick-dots .slick-active button {
+  transition: 0.2s;
+}
+.certificates .all .slick-dots .slick-active button::before {
+  transition: 0.2s;
+  color: #00FF00;
+}
 .certificates .all .slick-dots li {
   background-color: var(--otherBackgroundColor);
   transition: 0.2s;
@@ -1451,6 +1483,104 @@ input::-webkit-inner-spin-button {
   left: 5%;
 }
 
+.contact {
+  margin-top: 70px;
+  padding: 0;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+  width: 100%;
+  font-family: var(--pp_regular);
+}
+.contact .all {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+}
+.contact .all h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  width: 100%;
+}
+.contact .all form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.contact .all form .inputkeeper {
+  padding: 10px;
+}
+.contact .all form .inputkeeper input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  border: 1px solid #00FF00;
+  outline: none;
+  transition: var(--darkModeTransition);
+}
+.contact .all form .inputkeeper input::-moz-placeholder {
+  color: var(--textColor);
+}
+.contact .all form .inputkeeper input::placeholder {
+  color: var(--textColor);
+}
+.contact .all form .inputkeeper textarea {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  height: 250px;
+  resize: none;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  border: 1px solid #00FF00;
+  outline: none;
+  transition: var(--darkModeTransition);
+}
+.contact .all form .inputkeeper textarea::-moz-placeholder {
+  color: var(--textColor);
+}
+.contact .all form .inputkeeper textarea::placeholder {
+  color: var(--textColor);
+}
+.contact .all form button {
+  padding: 10px 50px;
+  color: var(--otherTextColor);
+  background-color: var(--otherBackgroundColor);
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.contact .all form span {
+  transition: 0.3s;
+  position: absolute;
+  right: 3%;
+  bottom: 1%;
+  font-size: 27px;
+  color: var(--textColor);
+}
+.contact .all form .hidespan {
+  opacity: 0;
+  visibility: hidden;
+}
+.contact .all form .showspan {
+  visibility: visible;
+  opacity: 1;
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
   .header {
     font-size: 18px;
@@ -1574,6 +1704,33 @@ input::-webkit-inner-spin-button {
   .skills .all .iteratedskills .skill p {
     bottom: 10%;
     font-size: 16px;
+  }
+  .contact {
+    margin-top: 40px;
+  }
+  .contact .all h1 {
+    font-size: 40px;
+  }
+  .contact .all form .inputkeeper {
+    padding: 7px;
+  }
+  .contact .all form .inputkeeper input {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .contact .all form .inputkeeper textarea {
+    font-size: 16px;
+    padding: 8px;
+    height: 220px;
+  }
+  .contact .all form button {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+  .contact .all form span {
+    right: 3%;
+    bottom: 1%;
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -1921,136 +2078,32 @@ input::-webkit-inner-spin-button {
     left: 50%;
     transform: translateX(-50%);
   }
-}
-@media (min-width: 768px) and (max-width: 992px) {
-  .home {
-    margin-top: 53px;
-  }
-  .home .all .left {
-    height: 500px;
-    min-height: unset;
-    max-height: unset;
-    padding: 20px 5%;
-  }
-  .home .all .left p {
-    font-size: 20px;
-  }
-  .home .all .left p:nth-child(2) {
-    font-size: 24px;
-    padding: 4% 8%;
-    box-shadow: 5px 5px 0px 0px var(--textColor) !important;
-  }
-  .home .all .left p:nth-child(4) {
-    color: black;
-    font-size: 23px;
-    padding: 4% 8%;
-    box-shadow: -5px -5px 0px 0px var(--textColor) !important;
-  }
-  .home .all .left p:nth-child(5) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .home .all .left .bottom {
-    padding: 0;
-  }
-  .home .all .left .bottom button {
-    padding: 12px 0;
-    font-size: 12px;
-  }
-  .home .all .left .bottom .icons {
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    padding: 0;
-  }
-  .home .all .left .bottom .icons svg {
-    width: 30px;
-    height: 30px;
-  }
-  .home .all .right .imgkeeper:nth-child(1) {
-    top: 7%;
-    left: 7%;
-  }
-  .home .all .right .imgkeeper:nth-child(2) {
-    top: 7%;
-    right: 7%;
-    width: 25%;
-  }
-  .home .all .right .imgkeeper:nth-child(3) {
-    right: 9%;
-    width: 13%;
-  }
-  .home .all .right .imgkeeper:nth-child(4) {
-    bottom: 17%;
-    left: 8%;
-    width: 13%;
-  }
-  .about {
+  .contact {
     margin-top: 30px;
-    padding: 0;
   }
-  .about .all h1 {
-    margin-bottom: 0px;
-    font-size: 40px;
+  .contact .all h1 {
+    font-size: 30px;
   }
-  .about .all .textelement {
-    font-size: 18px;
+  .contact .all form .inputkeeper {
+    padding: 7px;
   }
-  .about .all .element div p {
-    font-size: 18px;
+  .contact .all form .inputkeeper input {
+    font-size: 16px;
+    padding: 8px;
   }
-  .about .all .element .special p {
-    font-size: 18px;
+  .contact .all form .inputkeeper textarea {
+    font-size: 16px;
+    padding: 8px;
+    height: 300px;
   }
-  .projects {
-    margin-top: 50px;
-  }
-  .projects .all h1 {
-    margin-bottom: 30px;
-    font-size: 40px;
-  }
-  .projects .all .slick-next svg {
-    width: 100px;
-  }
-  .projects .all .slick-prev svg {
-    width: 100px;
-  }
-  .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-    top: 73%;
-  }
-  .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-    top: 85%;
-  }
-  .certificates {
-    margin-top: 50px;
-  }
-  .certificates .all h1 {
-    margin-bottom: 30px;
-    font-size: 40px;
-  }
-  .certificates .all .slick-next svg {
-    width: 100px;
-  }
-  .certificates .all .slick-prev svg {
-    width: 100px;
-  }
-  .certificates .all .iteratedcertificates .cert .certitems {
-    height: 430px;
-  }
-  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper {
-    height: 100%;
-  }
-  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(1) {
-    font-size: 18px;
-  }
-  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(2) {
+  .contact .all form button {
+    padding: 10px 30px;
     font-size: 14px;
   }
-  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(3) {
-    top: 22%;
-    font-size: 13px;
-  }
-  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper a {
-    font-size: 14px;
+  .contact .all form span {
+    right: 3%;
+    bottom: 1%;
+    font-size: 18px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -2227,5 +2280,136 @@ input::-webkit-inner-spin-button {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .home {
+    margin-top: 53px;
+  }
+  .home .all .left {
+    height: 500px;
+    min-height: unset;
+    max-height: unset;
+    padding: 20px 5%;
+  }
+  .home .all .left p {
+    font-size: 20px;
+  }
+  .home .all .left p:nth-child(2) {
+    font-size: 24px;
+    padding: 4% 8%;
+    box-shadow: 5px 5px 0px 0px var(--textColor) !important;
+  }
+  .home .all .left p:nth-child(4) {
+    color: black;
+    font-size: 23px;
+    padding: 4% 8%;
+    box-shadow: -5px -5px 0px 0px var(--textColor) !important;
+  }
+  .home .all .left p:nth-child(5) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .home .all .left .bottom {
+    padding: 0;
+  }
+  .home .all .left .bottom button {
+    padding: 12px 0;
+    font-size: 12px;
+  }
+  .home .all .left .bottom .icons {
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    padding: 0;
+  }
+  .home .all .left .bottom .icons svg {
+    width: 30px;
+    height: 30px;
+  }
+  .home .all .right .imgkeeper:nth-child(1) {
+    top: 7%;
+    left: 7%;
+  }
+  .home .all .right .imgkeeper:nth-child(2) {
+    top: 7%;
+    right: 7%;
+    width: 25%;
+  }
+  .home .all .right .imgkeeper:nth-child(3) {
+    right: 9%;
+    width: 13%;
+  }
+  .home .all .right .imgkeeper:nth-child(4) {
+    bottom: 17%;
+    left: 8%;
+    width: 13%;
+  }
+  .about {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .about .all h1 {
+    margin-bottom: 0px;
+    font-size: 40px;
+  }
+  .about .all .textelement {
+    font-size: 18px;
+  }
+  .about .all .element div p {
+    font-size: 18px;
+  }
+  .about .all .element .special p {
+    font-size: 18px;
+  }
+  .projects {
+    margin-top: 50px;
+  }
+  .projects .all h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .projects .all .slick-next svg {
+    width: 100px;
+  }
+  .projects .all .slick-prev svg {
+    width: 100px;
+  }
+  .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
+    top: 73%;
+  }
+  .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
+    top: 85%;
+  }
+  .certificates {
+    margin-top: 50px;
+  }
+  .certificates .all h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .certificates .all .slick-next svg {
+    width: 100px;
+  }
+  .certificates .all .slick-prev svg {
+    width: 100px;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems {
+    height: 430px;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper {
+    height: 100%;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(1) {
+    font-size: 18px;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(2) {
+    font-size: 14px;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(3) {
+    top: 22%;
+    font-size: 13px;
+  }
+  .certificates .all .iteratedcertificates .cert .certitems .contentkeeper a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=App.css.map */

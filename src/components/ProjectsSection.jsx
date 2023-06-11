@@ -69,7 +69,8 @@ const ProjectsSection = () => {
             },
         ],
     };
-
+    //image nado sdelat kak v sertifikatax, position absolute i pomestit poseredine
+    // i dla slidera sdelat active button li dizayn shto b bilo ponatno kto active tipa
     const filteredProjects =
         category.toLowerCase() === "all"
             ? projects
