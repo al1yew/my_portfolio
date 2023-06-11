@@ -75,7 +75,7 @@ const ProjectsSection = () => {
             : projects.filter((project) => project.category === category);
 
     return (
-        <section className="projects">
+        <section className="projects" id="Projects">
             <div className="container">
                 <div className="row all">
                     <h1>Projects</h1>

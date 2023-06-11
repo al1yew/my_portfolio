@@ -21,7 +21,7 @@ const CertificatesSection = () => {
     };
 
     return (
-        <section className="certificates">
+        <section className="certificates" id="Certificates">
             <div className="container">
                 <div className="row all">
                     <h1>Certificates</h1>

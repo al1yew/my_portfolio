@@ -11,7 +11,7 @@ const SkillsSection = () => {
             : skills.filter((skill) => skill.category === category);
 
     return (
-        <section className="skills">
+        <section className="skills" id="Skills">
             <div className="container">
                 <div className="row all">
                     <h1>Skills</h1>
