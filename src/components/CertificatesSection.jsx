@@ -30,13 +30,13 @@ const CertificatesSection = () => {
                             return (
                                 <div className="cert">
                                     <div className="certitems">
-                                        <div className="col-lg-6 col-12 imgkeeper">
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 imgkeeper">
                                             <img
                                                 src={cert.image}
                                                 alt="vasif aliyev"
                                             />
                                         </div>
-                                        <div className="col-lg-6 col-12 contentkeeper">
+                                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 contentkeeper">
                                             <p>{cert.certName}</p>
                                             <p>{cert.date}</p>
                                             <p>{cert.description}</p>

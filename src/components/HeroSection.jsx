@@ -21,7 +21,7 @@ const HeroSection = () => {
     return (
         <section className="home" id="Home">
             <div className=" all">
-                <div className="col-lg-6 col-md-6 col-12 left">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-12 left">
                     <p>Hello, My name is</p>
                     <p>Vasif Aliyev</p>
                     <p>and I am</p>
@@ -69,7 +69,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-6 col-12 right">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-12 right">
                     <div className="imgkeeper">
                         <img src={img1} alt="developer" />
                     </div>

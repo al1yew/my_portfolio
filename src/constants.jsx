@@ -391,28 +391,28 @@ export const projects = [
 export const certificates = [
     {
         id: nanoid(),
-        certName: "Software Development",
-        date: "October, 2022",
-        description:
-            "Given for completion of specialized training from Code Academy Azerbaijan, the first additional private educational complex in Azerbaijan accredited by the Ministry of Education. In partnership with Microsoft Company, the comprehensive 7 month course provided practical experience, time management skills, and customer interaction training. During the program, I acquired a range of programming technologies including HTML, CSS, JavaScript, C#, MSSQL, ASP.NET MVC, ASP.NET Web API, and React. This diverse skill set enables me to create web applications, learn new languages and explore new technologies, enhance my skills and utilizing various frameworks and libraries.",
-        link: "https://ibb.co/2dkJTm2",
-        image: diplom,
-    },
-    {
-        id: nanoid(),
         certName: "React",
         date: "November, 2022",
         description:
-            "Through rigorous coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build dynamic and interactive user interfaces, utilizing React's component-based architecture and state management. With this certification, I am equipped to develop scalable and performant web applications, leveraging React's extensive ecosystem and its ability to seamlessly integrate with other technologies.",
+            "Through coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build interactive user interfaces, utilizing React's component-based architecture and state management. With this, I am equipped to develop scalable web applications, leveraging React's extensive ecosystem and its ability to seamlessly integrate with other technologies.",
         link: "https://www.hackerrank.com/certificates/iframe/051a10db1bc9",
         image: react,
+    },
+    {
+        id: nanoid(),
+        certName: "Software Development",
+        date: "October, 2022",
+        description:
+            "Honour degree from Code Academy, a private educational complex accredited by Azerbaijani Ministry of Education and partnered with Microsoft. The 7-month course offered classes of HTML, CSS, JavaScript, C#, MSSQL, React and other technologies. This diverse skill set empowers me to develop web applications, learn new languages, explore technologies, and utilize frameworks and libraries to enhance my skills.",
+        link: "https://ibb.co/2dkJTm2",
+        image: diplom,
     },
     {
         id: nanoid(),
         certName: "Problem Solving",
         date: "November, 2022",
         description:
-            "By engaging in extensive practice and evaluations on HackerRank, I have diligently honed my problem-solving abilities while gaining an extensive comprehension of diverse data structures and algorithms. This certification serves as validation for my expertise in effectively addressing complex programming problems and optimizing code for superior performance. Having established a solid groundwork in problem solving, I possess the necessary skills to tackle a wide array of coding challenges spanning various domains. I excel in my ability to devise innovative and elegant solutions that yield optimal outcomes.",
+            "Given for dealing with diverse data structures and algorithms. This certification serves as validation for my expertise in effectively addressing complex programming problems and optimizing code for superior performance. Having established a solid groundwork in problem solving, I possess the necessary skills to tackle a wide array of coding challenges spanning various domains.",
         link: "https://www.hackerrank.com/certificates/iframe/051a10db1bc9",
         image: problem,
     },
@@ -421,7 +421,7 @@ export const certificates = [
         certName: "HTML and CSS",
         date: "November, 2022",
         description:
-            "Through focused dedication and evaluation on HackerRank, I have made substantial strides in enhancing my mastery of HTML and CSS. This certification serves as concrete evidence of my aptitude in constructing well-organized and visually captivating web pages using these essential web technologies. This certification serves as a testament to my proficiency in creating responsive layouts, skillfully employing CSS selectors, and implementing contemporary design principles. Equipped with this firm grounding in HTML and CSS, I possess the expertise to seamlessly translate design concepts into functional and aesthetically pleasing web interfaces.",
+            "Through focused dedication on HackerRank, I have enhanced my mastery of HTML and CSS. This certification serves as concrete evidence of my aptitude in constructing well-organized web pages using these essential web technologies. This certification serves as a testament to my knowledge in creating responsive layouts, skillfully employing CSS selectors, and implementing contemporary design principles.",
         link: "https://www.hackerrank.com/certificates/iframe/f8e6e5356a66",
         image: css,
     },

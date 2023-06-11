@@ -5,7 +5,7 @@ const AboutSection = () => {
                 <div className="row all">
                     <h1>About Me</h1>
                     <div className="element order-1 order-lg-1 order-sm-1 order-md-1 col-lg-5-8 col-md-12 col-12">
-                        <div className="col-lg-5-5 col-md-5-5 col-5-5">
+                        <div className="col-lg-5-5 col-md-5-5 col-sm-5-5 col-5-5">
                             <svg
                                 viewBox="0 0 287 247"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const AboutSection = () => {
                             </span>
                             <p>Problem Solving</p>
                         </div>
-                        <div className="col-lg-5-5 col-md-5-5 col-5-5">
+                        <div className="col-lg-5-5 col-md-5-5 col-sm-5-5 col-5-5">
                             <svg
                                 viewBox="0 0 287 247"
                                 fill="none"
@@ -61,7 +61,7 @@ const AboutSection = () => {
                             <p>Creativity</p>
                         </div>
                     </div>
-                    <div className="textelement order-3 order-sm-2 order-md-2 order-lg-2 col-lg-5-8 col-12 col-md-12">
+                    <div className="textelement order-3 order-sm-2 order-md-2 order-lg-2 col-lg-5-8 col-sm-12 col-12 col-md-12">
                         As a skilled software developer, I excel in crafting
                         immersive digital experiences that captivate users. With
                         a strong focus on aesthetic design and cutting-edge
@@ -70,7 +70,7 @@ const AboutSection = () => {
                         stay ahead of industry trends and deliver innovative
                         solutions aligned with evolving client needs.
                     </div>
-                    <div className="textelement order-4 order-sm-3 order-md-3 order-lg-3 col-lg-5-8 col-12 col-md-12">
+                    <div className="textelement order-4 order-sm-3 order-md-3 order-lg-3 col-lg-5-8 col-sm-12 col-12 col-md-12">
                         Effective time management is at the core of my workflow,
                         ensuring seamless project execution and meeting
                         deadlines without compromising quality. I possess
@@ -78,8 +78,8 @@ const AboutSection = () => {
                         complex coding challenges and developing robust,
                         scalable web applications.
                     </div>
-                    <div className="element order-2 order-lg-4 order-sm-4 order-md-4 col-lg-5-8 col-md-12 col-12">
-                        <div className="special col-lg-5-5 col-md-5-5 col-5-5">
+                    <div className="element order-2 order-lg-4 order-sm-4 order-md-4 col-lg-5-8 col-md-12 col-sm-12 col-12">
+                        <div className="special col-lg-5-5 col-sm-5-5 col-md-5-5 col-5-5">
                             <svg
                                 fill="none"
                                 viewBox="0 0 287 247"
@@ -105,7 +105,7 @@ const AboutSection = () => {
                             </span>
                             <p>Time Management</p>
                         </div>
-                        <div className="special col-lg-5-5 col-md-5-5 col-5-5">
+                        <div className="special col-lg-5-5 col-sm-5-5 col-md-5-5 col-5-5">
                             <svg
                                 fill="none"
                                 viewBox="0 0 287 247"
