@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useState } from "react";
 import { projects } from "../constants";
-import { Link } from "react-router-dom";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
 import image from "../assets/images/giphy.gif";
@@ -110,22 +109,6 @@ const ProjectsSection = () => {
                                     </div>
                                     <p>{project.projectName}</p>
                                     <p>{project.smallDescription}</p>
-                                    {/* <div className="links">
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="websitelink"
-                                        >
-                                            View Website
-                                        </a>
-                                        <Link
-                                            to={"/" + project.id}
-                                            className="projectlink"
-                                        >
-                                            View Details
-                                        </Link>
-                                    </div> */}
                                 </div>
                             </div>
                         ))}

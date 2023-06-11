@@ -776,7 +776,7 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
 }
 .about .all h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 50px;
   width: 100%;
@@ -876,7 +876,7 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
 }
 .skills .all h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 50px;
   width: 100%;
@@ -969,7 +969,7 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
 }
 .projects .all h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 50px;
   width: 100%;
@@ -1023,7 +1023,7 @@ input::-webkit-inner-spin-button {
 }
 .projects .all .slick-next {
   left: 15%;
-  bottom: 2%;
+  bottom: 3%;
   top: unset;
   right: unset;
   transform: unset;
@@ -1051,7 +1051,7 @@ input::-webkit-inner-spin-button {
 .projects .all .slick-prev {
   transform: translateX(50%);
   left: 0;
-  bottom: 2%;
+  bottom: 3%;
   top: unset;
   right: unset;
   transform: unset;
@@ -1151,13 +1151,14 @@ input::-webkit-inner-spin-button {
 }
 
 .certificates {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0;
   color: var(--textColor);
   background-color: var(--backgroundColor);
   transition: var(--darkModeTransition);
   width: 100%;
   font-family: var(--pp_regular);
+  overflow: hidden;
 }
 .certificates .all {
   padding: 0;
@@ -1171,10 +1172,161 @@ input::-webkit-inner-spin-button {
   transition: var(--darkModeTransition);
 }
 .certificates .all h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 50px;
   width: 100%;
+}
+.certificates .all .slick-dots {
+  bottom: 2%;
+  right: 0;
+  width: -moz-max-content;
+  width: max-content;
+}
+.certificates .all .slick-dots li {
+  background-color: var(--otherBackgroundColor);
+  transition: 0.2s;
+}
+.certificates .all .slick-dots li:hover {
+  background-color: #00FF00;
+}
+.certificates .all .slick-dots li:hover button::before {
+  color: #00FF00;
+}
+.certificates .all .slick-dots li button {
+  transition: 0.2s;
+}
+.certificates .all .slick-dots li button::before {
+  transition: 0.2s;
+  color: var(--textColor);
+}
+.certificates .all .slick-next {
+  left: 15%;
+  bottom: 2%;
+  top: unset;
+  right: unset;
+  transform: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.2s;
+}
+.certificates .all .slick-next::before {
+  display: none;
+}
+.certificates .all .slick-next svg {
+  width: 150px;
+  fill: var(--textColor);
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+}
+.certificates .all .slick-next svg path {
+  fill: var(--textColor);
+  color: var(--textColor);
+}
+.certificates .all .slick-next:hover {
+  transform: translateX(10%) scale(1.05);
+}
+.certificates .all .slick-prev {
+  transform: translateX(50%);
+  left: 0;
+  bottom: 2%;
+  top: unset;
+  right: unset;
+  transform: unset;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.2s;
+}
+.certificates .all .slick-prev::before {
+  display: none;
+}
+.certificates .all .slick-prev svg {
+  width: 150px;
+  fill: var(--textColor);
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  transition: var(--darkModeTransition);
+}
+.certificates .all .slick-prev svg path {
+  fill: var(--textColor);
+  color: var(--textColor);
+}
+.certificates .all .slick-prev:hover {
+  transform: translateX(-10%) scale(1.05);
+}
+.certificates .all .iteratedcertificates {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+.certificates .all .iteratedcertificates .cert {
+  padding: 0;
+  margin: 0;
+  padding: 10px;
+}
+.certificates .all .iteratedcertificates .cert .certitems {
+  border: 1px solid #00FF00;
+  font-family: var(--pp_plain);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.certificates .all .iteratedcertificates .cert .certitems .imgkeeper {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.certificates .all .iteratedcertificates .cert .certitems .imgkeeper img {
+  max-width: 95%;
+  max-height: 95%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper {
+  position: relative;
+  height: 100%;
+  margin: 0;
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper p {
+  position: absolute;
+  width: 90%;
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(1) {
+  top: 5%;
+  left: 5%;
+  font-size: 20px;
+  font-family: var(--pp_regular);
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(2) {
+  top: 14%;
+  left: 5%;
+  font-family: var(--pp_light);
+  color: #00FF00;
+  font-size: 16px;
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(3) {
+  top: 22%;
+  left: 5%;
+  font-family: var(--pp_light);
+  font-size: 14px;
+}
+.certificates .all .iteratedcertificates .cert .certitems .contentkeeper a {
+  text-decoration: underline;
+  color: var(--textColor);
+  font-size: 16px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
 }
 
 @media (max-width: 576px) {
@@ -1332,7 +1484,7 @@ input::-webkit-inner-spin-button {
   }
   .about .all h1 {
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 30px;
   }
   .about .all .textelement {
     font-size: 15px;
@@ -1347,6 +1499,7 @@ input::-webkit-inner-spin-button {
     margin-top: 30px;
   }
   .skills .all h1 {
+    margin-bottom: 30px;
     font-size: 30px;
   }
   .skills .all ul {
@@ -1383,7 +1536,7 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
   }
   .projects {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .projects .all h1 {
     margin-bottom: 30px;
@@ -1674,7 +1827,7 @@ input::-webkit-inner-spin-button {
     margin-top: 50px;
   }
   .projects .all h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 40px;
   }
   .projects .all .slick-next {
