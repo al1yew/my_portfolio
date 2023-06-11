@@ -391,21 +391,21 @@ export const projects = [
 export const certificates = [
     {
         id: nanoid(),
-        certName: "React",
-        date: "November, 2022",
-        description:
-            "Through coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build interactive user interfaces, utilizing React's component-based architecture and state management. With this, I am equipped to develop scalable web applications, leveraging React's extensive ecosystem and its ability to seamlessly integrate with other technologies.",
-        link: "https://www.hackerrank.com/certificates/iframe/051a10db1bc9",
-        image: react,
-    },
-    {
-        id: nanoid(),
         certName: "Software Development",
         date: "October, 2022",
         description:
             "Honour degree from Code Academy, a private educational complex accredited by Azerbaijani Ministry of Education and partnered with Microsoft. The 7-month course offered classes of HTML, CSS, JavaScript, C#, MSSQL, React and other technologies. This diverse skill set empowers me to develop web applications, learn new languages, explore technologies, and utilize frameworks and libraries to enhance my skills.",
         link: "https://ibb.co/2dkJTm2",
         image: diplom,
+    },
+    {
+        id: nanoid(),
+        certName: "React",
+        date: "November, 2022",
+        description:
+            "Through coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build interactive user interfaces, utilizing React's component-based architecture and state management. With this, I am equipped to develop scalable web applications, leveraging React's extensive ecosystem and its ability to seamlessly integrate with other technologies.",
+        link: "https://www.hackerrank.com/certificates/iframe/051a10db1bc9",
+        image: react,
     },
     {
         id: nanoid(),
