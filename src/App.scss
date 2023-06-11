@@ -1699,7 +1699,7 @@ input::-webkit-inner-spin-button {
                 padding: 10px;
 
                 .certitems {
-                    border: 1px solid #00FF00;
+                    // border: 1px solid #00FF00;
                     font-family: var(--pp_plain);
                     cursor: pointer;
                     padding: 0;
@@ -1741,6 +1741,7 @@ input::-webkit-inner-spin-button {
                                 left: 5%;
                                 font-size: 20px;
                                 font-family: var(--pp_regular);
+                                font-weight: 600; //
                             }
 
                             &:nth-child(2) {
@@ -1748,7 +1749,7 @@ input::-webkit-inner-spin-button {
                                 left: 5%;
                                 font-family: var(--pp_light);
                                 color: #00FF00;
-                                font-size: 18px;
+                                font-size: 16px; //
                             }
 
                             &:nth-child(3) {

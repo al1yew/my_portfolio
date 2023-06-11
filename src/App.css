@@ -1420,7 +1420,6 @@ input::-webkit-inner-spin-button {
   padding: 10px;
 }
 .certificates .all .iteratedcertificates .cert .certitems {
-  border: 1px solid #00FF00;
   font-family: var(--pp_plain);
   cursor: pointer;
   padding: 0;
@@ -1460,13 +1459,14 @@ input::-webkit-inner-spin-button {
   left: 5%;
   font-size: 20px;
   font-family: var(--pp_regular);
+  font-weight: 600;
 }
 .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(2) {
   top: 14%;
   left: 5%;
   font-family: var(--pp_light);
   color: #00FF00;
-  font-size: 18px;
+  font-size: 16px;
 }
 .certificates .all .iteratedcertificates .cert .certitems .contentkeeper p:nth-child(3) {
   top: 22%;
