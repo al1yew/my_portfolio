@@ -6,6 +6,7 @@ import { projects } from "../constants";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
 import image from "../assets/images/giphy.gif";
+import img from "../assets/images/square.jpg";
 
 const ProjectsSection = () => {
     const [category, setCategory] = useState("all");
@@ -103,7 +104,7 @@ const ProjectsSection = () => {
                                 <div className="projectitems">
                                     <div className="imgkeeper">
                                         <img
-                                            src={image}
+                                            src={img}
                                             alt={project.projectName}
                                         />
                                     </div>
