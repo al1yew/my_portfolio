@@ -6,6 +6,7 @@ import { projects } from "../constants";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
 import img from "../assets/images/vinyoxla.png";
+import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
     const [category, setCategory] = useState("all");
@@ -110,6 +111,7 @@ const ProjectsSection = () => {
                                     </div>
                                     <p>{project.projectName}</p>
                                     <p>{project.smallDescription}</p>
+                                    <Link to={project.id}>View Project</Link>
                                 </div>
                             </div>
                         ))}

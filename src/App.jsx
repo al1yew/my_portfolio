@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +26,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<MainPage />} />
-                {/* <Route path="/:id" element={<ProjectDetail />} /> */}
+                <Route path="/:id" element={<ProjectDetails />} />
             </Routes>
             <Footer />
         </BrowserRouter>

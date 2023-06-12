@@ -1128,7 +1128,7 @@ input::-webkit-inner-spin-button {
   color: var(--otherTextColor);
 }
 .projects .all .slick-dots {
-  bottom: 2%;
+  bottom: 1%;
   right: 0;
   width: -moz-max-content;
   width: max-content;
@@ -1167,8 +1167,8 @@ input::-webkit-inner-spin-button {
   color: var(--textColor);
 }
 .projects .all .slick-next {
-  left: 15%;
-  bottom: 3%;
+  left: 10%;
+  bottom: 2%;
   top: unset;
   right: unset;
   transform: unset;
@@ -1180,7 +1180,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .projects .all .slick-next svg {
-  width: 150px;
+  width: 70px;
   fill: var(--textColor);
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -1189,14 +1189,14 @@ input::-webkit-inner-spin-button {
 .projects .all .slick-next svg path {
   fill: var(--textColor);
   color: var(--textColor);
+  stroke: var(--textColor);
 }
 .projects .all .slick-next:hover {
   transform: translateX(10%) scale(1.05);
 }
 .projects .all .slick-prev {
-  transform: translateX(50%);
   left: 0;
-  bottom: 3%;
+  bottom: 2%;
   top: unset;
   right: unset;
   transform: unset;
@@ -1208,7 +1208,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .projects .all .slick-prev svg {
-  width: 150px;
+  width: 70px;
   fill: var(--textColor);
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -1217,6 +1217,7 @@ input::-webkit-inner-spin-button {
 .projects .all .slick-prev svg path {
   fill: var(--textColor);
   color: var(--textColor);
+  stroke: var(--textColor);
 }
 .projects .all .slick-prev:hover {
   transform: translateX(-10%) scale(1.05);
@@ -1236,7 +1237,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  height: 410px;
+  height: 370px;
   width: 100%;
   position: relative;
 }
@@ -1251,7 +1252,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .projects .all .iteratedprojects .project .projectitems .imgkeeper img {
-  width: 90%;
+  width: 100%;
 }
 .projects .all .iteratedprojects .project .projectitems p {
   position: absolute;
@@ -1260,21 +1261,32 @@ input::-webkit-inner-spin-button {
   padding: 0 10px;
 }
 .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-  top: 70%;
+  top: 50%;
   left: 0;
   font-size: 18px;
   font-family: var(--pp_regular);
   font-weight: 600;
 }
 .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-  top: 83%;
+  top: 68%;
   left: 0;
   font-family: var(--pp_light);
-  font-size: 14px;
+  font-size: 15px;
+}
+.projects .all .iteratedprojects .project .projectitems a {
+  position: absolute;
+  color: var(--textColor);
+  transition: var(--darkModeTransition);
+  text-align: center;
+  width: 100%;
+  top: 93%;
+  left: 0;
+  font-size: 18px;
+  font-family: var(--pp_regular);
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .projects .all .iteratedprojects .project .projectitems {
-    height: 420px;
+    height: 350px;
   }
   .projects .all .iteratedprojects .project .projectitems p {
     position: absolute;
@@ -1282,16 +1294,38 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-    top: 77%;
+    top: 63%;
     left: 0;
     font-size: 18px;
     font-family: var(--pp_regular);
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-    top: 87%;
+    top: 74%;
     left: 0;
     font-family: var(--pp_light);
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) {
+  .projects .all .iteratedprojects .project .projectitems {
+    height: 340px;
+  }
+  .projects .all .iteratedprojects .project .projectitems p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
+    top: 59%;
+    left: 0;
+    font-size: 18px;
+    font-family: var(--pp_regular);
+  }
+  .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
+    top: 70%;
+    left: 0;
+    font-family: var(--pp_light);
+    font-size: 16px;
   }
 }
 
@@ -1323,7 +1357,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
 }
 .certificates .all .slick-dots {
-  bottom: 2%;
+  bottom: 1%;
   right: 0;
   width: -moz-max-content;
   width: max-content;
@@ -1362,7 +1396,7 @@ input::-webkit-inner-spin-button {
   color: var(--textColor);
 }
 .certificates .all .slick-next {
-  left: 15%;
+  left: 10%;
   bottom: 2%;
   top: unset;
   right: unset;
@@ -1375,7 +1409,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .certificates .all .slick-next svg {
-  width: 150px;
+  width: 70px;
   fill: var(--textColor);
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -1384,12 +1418,12 @@ input::-webkit-inner-spin-button {
 .certificates .all .slick-next svg path {
   fill: var(--textColor);
   color: var(--textColor);
+  stroke: var(--textColor);
 }
 .certificates .all .slick-next:hover {
   transform: translateX(10%) scale(1.05);
 }
 .certificates .all .slick-prev {
-  transform: translateX(50%);
   left: 0;
   bottom: 2%;
   top: unset;
@@ -1403,7 +1437,7 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 .certificates .all .slick-prev svg {
-  width: 150px;
+  width: 70px;
   fill: var(--textColor);
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -1412,6 +1446,7 @@ input::-webkit-inner-spin-button {
 .certificates .all .slick-prev svg path {
   fill: var(--textColor);
   color: var(--textColor);
+  stroke: var(--textColor);
 }
 .certificates .all .slick-prev:hover {
   transform: translateX(-10%) scale(1.05);
@@ -1969,7 +2004,7 @@ input::-webkit-inner-spin-button {
          column-gap: 15px;
   }
   .projects .all .categories li {
-    padding: 8px 4px 5px 4px;
+    padding: 8px 1px 5px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1988,7 +2023,7 @@ input::-webkit-inner-spin-button {
     transition: unset;
   }
   .projects .all .slick-next svg {
-    width: 130px;
+    width: 60px;
   }
   .projects .all .slick-next:hover {
     transform: unset;
@@ -2000,23 +2035,23 @@ input::-webkit-inner-spin-button {
     transition: unset;
   }
   .projects .all .slick-prev svg {
-    width: 130px;
+    width: 60px;
   }
   .projects .all .slick-prev:hover {
     transform: unset;
   }
   .projects .all .iteratedprojects .project .projectitems {
-    height: 530px;
+    height: 420px;
   }
   .projects .all .iteratedprojects .project .projectitems .imgkeeper img {
     width: 350px;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-    top: 69%;
+    top: 53%;
     font-size: 22px;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-    top: 82%;
+    top: 70%;
     font-size: 18px;
   }
   .certificates {
@@ -2036,7 +2071,7 @@ input::-webkit-inner-spin-button {
     transition: unset;
   }
   .certificates .all .slick-next svg {
-    width: 130px;
+    width: 60px;
   }
   .certificates .all .slick-next:hover {
     transform: unset;
@@ -2048,7 +2083,7 @@ input::-webkit-inner-spin-button {
     transition: unset;
   }
   .certificates .all .slick-prev svg {
-    width: 130px;
+    width: 60px;
   }
   .certificates .all .slick-prev:hover {
     transform: unset;
@@ -2285,25 +2320,25 @@ input::-webkit-inner-spin-button {
     font-size: 40px;
   }
   .projects .all .slick-next {
-    left: 20%;
+    left: 12%;
   }
   .projects .all .slick-next svg {
-    width: 100px;
+    width: 50px;
   }
   .projects .all .slick-prev {
     left: 0;
   }
   .projects .all .slick-prev svg {
-    width: 100px;
+    width: 50px;
   }
   .projects .all .iteratedprojects .project .projectitems {
-    height: 390px;
+    height: 350px;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-    top: 60%;
+    top: 44%;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-    top: 78%;
+    top: 65%;
   }
   .certificates {
     margin-top: 50px;
@@ -2313,16 +2348,16 @@ input::-webkit-inner-spin-button {
     font-size: 40px;
   }
   .certificates .all .slick-next {
-    left: 20%;
+    left: 12%;
   }
   .certificates .all .slick-next svg {
-    width: 100px;
+    width: 50px;
   }
   .certificates .all .slick-prev {
     left: 0;
   }
   .certificates .all .slick-prev svg {
-    width: 100px;
+    width: 50px;
   }
   .certificates .all .iteratedcertificates .cert .certitems {
     height: 700px;
@@ -2499,16 +2534,16 @@ input::-webkit-inner-spin-button {
     font-size: 40px;
   }
   .projects .all .slick-next svg {
-    width: 100px;
+    width: 60px;
   }
   .projects .all .slick-prev svg {
-    width: 100px;
+    width: 60px;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(2) {
-    top: 73%;
+    top: 56%;
   }
   .projects .all .iteratedprojects .project .projectitems p:nth-child(3) {
-    top: 85%;
+    top: 71%;
   }
   .certificates {
     margin-top: 50px;
@@ -2518,10 +2553,10 @@ input::-webkit-inner-spin-button {
     font-size: 40px;
   }
   .certificates .all .slick-next svg {
-    width: 100px;
+    width: 60px;
   }
   .certificates .all .slick-prev svg {
-    width: 100px;
+    width: 60px;
   }
   .certificates .all .iteratedcertificates .cert .certitems {
     height: 430px;
