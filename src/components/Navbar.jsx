@@ -6,7 +6,7 @@ import { useThemeContext } from "../themeContext";
 import logoWhite from "../assets/images/logoW.png";
 import logoBlack from "../assets/images/logoB.png";
 import { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const { isDarkTheme, toggleDarkTheme } = useThemeContext();
@@ -41,6 +41,10 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [isSidebarOpen]);
+
+    const location = useLocation();
+
+    const isMainPage = location.pathname === "/";
 
     return (
         <header className={isScroll ? "header thin_header" : "header"}>
