@@ -293,7 +293,7 @@ export const projects = [
         category: "Front End",
         projectName: "Customs Taxes Calculator",
         smallDescription:
-            "Customs calculator for imported vehicles based on Azerbaijan's customs laws.",
+            "Customs calculator for imported vehicles based on Azerbaijan's laws.",
         longDescription:
             "Introducing Rusum.Az, a powerful customs calculator designed for my previous employer. This algorithmic solution is meticulously crafted based on the customs code and laws of Azerbaijan Republic. Specifically tailored for imported vehicles, Rusum.Az accurately computes all taxes applicable at the border and post-import. By utilizing various factors and values, it efficiently manages the final cost of taxes, including intermediate taxes that contribute to the overall result. The convenience and reliability of Rusum.Az ensures precise tax calculations, facilitating a streamlined and transparent process for the importation of automobiles.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
