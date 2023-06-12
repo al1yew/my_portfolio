@@ -5,7 +5,6 @@ import { useState } from "react";
 import { projects } from "../constants";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
-import img from "../assets/images/vinyoxla.png";
 import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
@@ -105,7 +104,7 @@ const ProjectsSection = () => {
                                 <div className="projectitems">
                                     <div className="imgkeeper">
                                         <img
-                                            src={img}
+                                            src={project.smallImage}
                                             alt={project.projectName}
                                         />
                                     </div>
