@@ -5,7 +5,6 @@ import { useState } from "react";
 import { projects } from "../constants";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
-import image from "../assets/images/vinyoxla.gif";
 import img from "../assets/images/vinyoxla.png";
 
 const ProjectsSection = () => {
