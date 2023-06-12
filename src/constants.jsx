@@ -260,7 +260,7 @@ export const projects = [
         id: nanoid(),
         category: "Full Stack",
         projectName: "Pull & Bear",
-        smallDescription: "E-Commerce store selling clothes.",
+        smallDescription: "E-Commerce store selling clothes, made for portfolio.",
         longDescription:
             "A fully functional and completed E-Commerce store offering a wide range of fashionable clothing and related products. Developed as the final project of my software programming course two years ago, Pull & Bear received a perfect score of 100 points. With its comprehensive pages and responsive design, this project showcases my expertise in software programming. While the backend is currently not deployed on a hosting provider, the code can be found on my GitHub repository. Pull & Bear incorporates a robust cart management system, intricate product color and size relation logics, various algorithms, and plugins. The extensive admin area enables seamless management of all aspects of the website, including image sections, product details, and more.",
         technologies: [
@@ -281,7 +281,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "To ... List",
-        smallDescription: "Multiple task categories app .",
+        smallDescription: "App with multiple task categories and user-friendly management.",
         longDescription:
             "Introducing \"To ... List\", an intuitive to-do list application built with React. This app goes beyond a simple to-do list, offering users the ability to manage various task categories like 'to go,' 'to buy,' 'to create,' 'to achieve,' and more. Leveraging the power of React and CSS, \"To ... List\" provides a seamless user experience with smooth task updates and deletions. By utilizing the 'useReducer' hook, the app efficiently manages state changes and ensures optimal performance. Additionally, all user data is stored securely within the browser's local storage, allowing users to seamlessly access and organize their tasks while managing their time effectively. Experience hassle-free task management with \"To ... List\"!",
         technologies: ["React"],
@@ -323,7 +323,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "Comfy Sloth",
-        smallDescription: "A React-based E-Commerce App.",
+        smallDescription: "A React-based E-Commerce App, made for portfolio.",
         longDescription:
             "Introducing Comfy Cloth, an immersive e-commerce application built using React, Context API, React Router, and useReducer. This dynamic web application specializes in selling furniture, offering a wide range of products to customers. Comfy Cloth can  integrate with Stripe, allowing secure and convenient payment processing. The application leverages local storage to store cart items, ensuring a seamless shopping experience across sessions. With its own filtering system powered by useReducer and Context API, users can easily explore and discover the furniture they desire. Experience the comfort and convenience of Comfy Cloth as you shop for high-quality furniture from the comfort of your home.",
         technologies: ["React", "Context API", "React Router", "Auth0"],
@@ -346,7 +346,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "Cocktails",
-        smallDescription: "Explore cocktails and recipe features.",
+        smallDescription: "Explore cocktails and recipe features with Cocktails.",
         longDescription:
             "Discover a world of delightful cocktails with our interactive Cocktails website. Whether you're looking for a classic favorite or seeking new concoctions, our platform allows you to explore and select cocktails based on your preferences. Experience personalized search capabilities and uncover the perfect recipe to satisfy your taste buds. Cheers to a delightful journey of mixology!",
         technologies: ["React", "Context API", "React Router"],
@@ -357,7 +357,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "Unsplash Images",
-        smallDescription: "Search images related to your content.",
+        smallDescription: "Search different images related to your desired content.",
         longDescription:
             "Embark on a visual journey with Unsplash Images project. Simply type in a word or phrase, and instantly find a vast collection of stunning images relevant to your provided content. Whether you're seeking inspiration, looking for the perfect visual for your project, or simply enjoying the beauty of photography, Unsplash Images has you covered. Additionally, enhance your viewing experience by switching to the dark mode theme for a sleek and immersive interface. Start exploring and let your imagination roam through captivating visuals!",
         technologies: ["React", "Context API", "React Router"],
@@ -379,7 +379,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "Grand Tour",
-        smallDescription: "Experience exceptional stays with ease.",
+        smallDescription: "Hotel booking application developer for portfolio.",
         longDescription:
             "Welcome to captivating hotel booking website designed to showcase my portfolio. Discover a world of exceptional stays at your fingertips. With its user-friendly interface, Vasif Hotel allows you to effortlessly browse and book your desired accommodations. Whether you're planning a business trip or a leisurely getaway, Vasif Hotel offers a range of options to suit your needs. Experience convenience, comfort, and unparalleled hospitality as you embark on your next adventure with Vasif Hotel.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript"],

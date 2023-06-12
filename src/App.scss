@@ -1526,9 +1526,9 @@ input::-webkit-inner-spin-button {
 
                     a {
                         position: absolute;
-                        color: var(--textColor);
-                        transition: var(--darkModeTransition);
                         text-align: center;
+                        text-decoration: underline;
+                        color: #00FF00;
                         width: 100%;
                         top: 93%;
                         left: 0;
