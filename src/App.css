@@ -1600,6 +1600,7 @@ input::-webkit-inner-spin-button {
 }
 .contact .all form button {
   padding: 10px 50px;
+  padding-top: 14px;
   color: var(--otherTextColor);
   background-color: var(--otherBackgroundColor);
   font-size: 20px;
@@ -1777,6 +1778,7 @@ input::-webkit-inner-spin-button {
   }
   .contact .all form button {
     padding: 10px 40px;
+    padding-top: 14px;
     font-size: 16px;
   }
   .contact .all form span {
@@ -2150,6 +2152,7 @@ input::-webkit-inner-spin-button {
   }
   .contact .all form button {
     padding: 10px 30px;
+    padding-top: 14px;
     font-size: 14px;
   }
   .contact .all form span {

@@ -281,7 +281,7 @@ export const projects = [
         id: nanoid(),
         category: "Front End",
         projectName: "To ... List",
-        smallDescription: "Multiple task categories app.",
+        smallDescription: "Multiple task categories app .",
         longDescription:
             "Introducing \"To ... List\", an intuitive to-do list application built with React. This app goes beyond a simple to-do list, offering users the ability to manage various task categories like 'to go,' 'to buy,' 'to create,' 'to achieve,' and more. Leveraging the power of React and CSS, \"To ... List\" provides a seamless user experience with smooth task updates and deletions. By utilizing the 'useReducer' hook, the app efficiently manages state changes and ensures optimal performance. Additionally, all user data is stored securely within the browser's local storage, allowing users to seamlessly access and organize their tasks while managing their time effectively. Experience hassle-free task management with \"To ... List\"!",
         technologies: ["React"],

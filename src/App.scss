@@ -1849,16 +1849,6 @@ input::-webkit-inner-spin-button {
             width: 100%;
         }
 
-        // .succeeded {
-        //     input {
-        //         box-shadow: 0px 0px 15px 0px #00FF00;
-        //     }
-
-        //     textarea {
-        //         box-shadow: 0px 0px 15px 0px #00FF00;
-        //     }
-        // }
-
         form {
             display: flex;
             justify-content: center;
@@ -1906,6 +1896,7 @@ input::-webkit-inner-spin-button {
 
             button {
                 padding: 10px 50px;
+                padding-top: 14px;
                 color: var(--otherTextColor);
                 background-color: var(--otherBackgroundColor);
                 font-size: 20px;
@@ -2128,6 +2119,7 @@ input::-webkit-inner-spin-button {
 
                 button {
                     padding: 10px 40px;
+                    padding-top: 14px;
                     font-size: 16px;
                 }
 
@@ -2645,6 +2637,7 @@ input::-webkit-inner-spin-button {
 
                 button {
                     padding: 10px 30px;
+                    padding-top: 14px;
                     font-size: 14px;
                 }
 
