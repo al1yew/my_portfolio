@@ -6,6 +6,7 @@ import { useThemeContext } from "../themeContext";
 import logoWhite from "../assets/images/logoW.png";
 import logoBlack from "../assets/images/logoB.png";
 import { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const { isDarkTheme, toggleDarkTheme } = useThemeContext();
@@ -46,18 +47,22 @@ const Navbar = () => {
             <div className="container">
                 <div className="row all">
                     <div className="imgkeeper">
-                        <a href="#Home">
+                        <Link to="/">
                             <img
                                 src={isDarkTheme ? logoBlack : logoWhite}
                                 alt="vasif aliyev"
                             />
-                        </a>
+                        </Link>
                     </div>
                     <ul className="comp_ul col-lg-7 col-md-9">
                         {links.map((link, i) => {
-                            return (
+                            return isMainPage ? (
                                 <li key={i}>
                                     <a href={"#" + link}>{link}</a>
+                                </li>
+                            ) : (
+                                <li key={i}>
+                                    <Link to="/">{link}</Link>
                                 </li>
                             );
                         })}

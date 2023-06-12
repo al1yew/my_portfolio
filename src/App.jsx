@@ -7,6 +7,7 @@ import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails";
+import Scroll from "./components/Scroll";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -22,11 +23,12 @@ function App() {
     return isLoading ? (
         <Preloader />
     ) : (
-        <BrowserRouter>
+        <BrowserRouter scrollRestoration="auto">
+            <Scroll />
             <Navbar />
             <Routes>
                 <Route path="/" element={<MainPage />} />
-                <Route path="/:id" element={<ProjectDetails />} />
+                <Route path="/project/:id" element={<ProjectDetails />} />
             </Routes>
             <Footer />
         </BrowserRouter>

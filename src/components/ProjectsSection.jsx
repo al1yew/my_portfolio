@@ -109,7 +109,7 @@ const ProjectsSection = () => {
                                     </div>
                                     <p>{project.projectName}</p>
                                     <p>{project.smallDescription}</p>
-                                    <Link to={"/" + project.id}>
+                                    <Link to={"/project/" + project.id}>
                                         View Project
                                     </Link>
                                 </div>
