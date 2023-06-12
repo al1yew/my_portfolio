@@ -2012,11 +2012,6 @@ input::-webkit-inner-spin-button {
         }
 
         .left {
-
-            .small {
-                display: none;
-            }
-
             img {
                 width: 100%;
             }
@@ -2034,6 +2029,7 @@ input::-webkit-inner-spin-button {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            padding: 15px;
 
             p {
                 width: 100%;
@@ -2243,15 +2239,6 @@ input::-webkit-inner-spin-button {
             }
 
             .left {
-
-                .small {
-                    display: block;
-                }
-
-                .big {
-                    display: none;
-                }
-
                 img {
                     width: 100%;
                 }
@@ -2862,15 +2849,6 @@ input::-webkit-inner-spin-button {
             }
 
             .left {
-
-                .small {
-                    display: block;
-                }
-
-                .big {
-                    display: none;
-                }
-
                 img {
                     width: 100%;
                 }

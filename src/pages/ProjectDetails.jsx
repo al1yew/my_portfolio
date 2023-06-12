@@ -10,7 +10,6 @@ const ProjectDetails = () => {
         longDescription,
         technologies,
         link,
-        bigImage,
         smallImage,
     } = projects.find((x) => x.id == id);
 
@@ -21,8 +20,11 @@ const ProjectDetails = () => {
                     <div className="row all">
                         <h1>{projectName}</h1>
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 left">
-                            <img src={bigImage} alt={projectName} className="big"/>
-                            <img src={smallImage} alt={projectName} className="small"/>
+                            <img
+                                src={smallImage}
+                                alt={projectName}
+                                className="small"
+                            />
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12 col-12 right">
                             <p>Category: {category}</p>
