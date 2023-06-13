@@ -36,10 +36,10 @@ import smallUnsplash from "./assets/images/smallUnsplash.png";
 import smallBP from "./assets/images/smallBP.png";
 import smallPullBear from "./assets/images/smallPullBear.png";
 
-import problem from "./assets/images/problem.png";
-import react from "./assets/images/react.png";
-import css from "./assets/images/css.png";
-import diplom from "./assets/images/diplom.jpg";
+import problem from "./assets/images/newproblem.png";
+import react from "./assets/images/newreact.png";
+import css from "./assets/images/newcss.png";
+import diplom from "./assets/images/newcode.png";
 
 export const links = [
     "Home",
