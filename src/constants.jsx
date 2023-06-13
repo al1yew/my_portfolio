@@ -23,8 +23,18 @@ import {
     SiPostgresql,
     SiMongodb,
 } from "react-icons/si";
+
 import smallVinyoxla from "./assets/images/smallVinyoxla.png";
-import bigVinyoxla from "./assets/images/bigVinyoxla.png";
+import smallBacola from "./assets/images/smallBacola.png";
+import smallCocktails from "./assets/images/smallCocktails.png";
+import smallComfy from "./assets/images/smallComfy.png";
+import smallGrandTour from "./assets/images/smallGrandTour.png";
+import smallRusum from "./assets/images/smallRusum.png";
+import smallSuefa from "./assets/images/smallSuefa.png";
+import smallToDO from "./assets/images/smallToDO.png";
+import smallUnsplash from "./assets/images/smallUnsplash.png";
+import smallBP from "./assets/images/smallBP.png";
+import smallPullBear from "./assets/images/smallPullBear.png";
 
 import problem from "./assets/images/problem.png";
 import react from "./assets/images/react.png";
@@ -235,8 +245,7 @@ export const projects = [
             "React Bootstrap",
         ],
         link: "https://bprisk.netlify.com",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallBP,
     },
     {
         id: 2,
@@ -258,7 +267,6 @@ export const projects = [
         ],
         link: "https://vinyoxla.az",
         smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
     },
     {
         id: 3,
@@ -280,8 +288,7 @@ export const projects = [
             "Microsoft SQL Server",
         ],
         link: "https://vasifecom.netlify.com",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallPullBear,
     },
     {
         id: 4,
@@ -293,8 +300,7 @@ export const projects = [
             "Introducing \"To ... List\", an intuitive to-do list application built with React. This app goes beyond a simple to-do list, offering users the ability to manage various task categories like 'to go,' 'to buy,' 'to create,' 'to achieve,' and more. Leveraging the power of React and CSS, \"To ... List\" provides a seamless user experience with smooth task updates and deletions. By utilizing the 'useReducer' hook, the app efficiently manages state changes and ensures optimal performance. Additionally, all user data is stored securely within the browser's local storage, allowing users to seamlessly access and organize their tasks while managing their time effectively. Experience hassle-free task management with \"To ... List\"!",
         technologies: ["React"],
         link: "https://donotes.netlify.com",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallToDO,
     },
     {
         id: 5,
@@ -306,8 +312,7 @@ export const projects = [
             "Introducing Rusum.Az, a powerful customs calculator designed for my previous employer. This algorithmic solution is meticulously crafted based on the customs code and laws of Azerbaijan Republic. Specifically tailored for imported vehicles, Rusum.Az accurately computes all taxes applicable at the border and post-import. By utilizing various factors and values, it efficiently manages the final cost of taxes, including intermediate taxes that contribute to the overall result. The convenience and reliability of Rusum.Az ensures precise tax calculations, facilitating a streamlined and transparent process for the importation of automobiles.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
         link: "https://rusum.az",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallRusum,
     },
     {
         id: 6,
@@ -326,8 +331,7 @@ export const projects = [
             "Jquery",
         ],
         link: "https://suefa.app",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallSuefa,
     },
     {
         id: 7,
@@ -338,8 +342,7 @@ export const projects = [
             "Introducing Comfy Cloth, an immersive e-commerce application built using React, Context API, React Router, and useReducer. This dynamic web application specializes in selling furniture, offering a wide range of products to customers. Comfy Cloth can  integrate with Stripe, allowing secure and convenient payment processing. The application leverages local storage to store cart items, ensuring a seamless shopping experience across sessions. With its own filtering system powered by useReducer and Context API, users can easily explore and discover the furniture they desire. Experience the comfort and convenience of Comfy Cloth as you shop for high-quality furniture from the comfort of your home.",
         technologies: ["React", "Context API", "React Router", "Auth0"],
         link: "https://vasifcomfy.netlify.com",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallComfy,
     },
     {
         id: 8,
@@ -351,8 +354,7 @@ export const projects = [
             "Introducing Bacola, an innovative grocery selling app crafted specifically for my portfolio during a course. With its responsive design, Bacola aims to provide users with a seamless and user-friendly shopping experience. While currently focusing on the front-end development, the app showcases my ability to create visually appealing and intuitive interfaces for e-commerce platforms. Bacola enables users to browse through a variety of grocery products, add them to their cart, and proceed with a hassle-free checkout process. Although the app is currently limited to the front-end functionality, its purpose is to demonstrate my skills in crafting compelling user experiences for online grocery shopping. Step into the world of Bacola and explore a glimpse of my capabilities in web development and design.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
         link: "https://bacola.netlify.app",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallBacola,
     },
     {
         id: 9,
@@ -364,8 +366,7 @@ export const projects = [
             "Discover a world of delightful cocktails with our interactive Cocktails website. Whether you're looking for a classic favorite or seeking new concoctions, our platform allows you to explore and select cocktails based on your preferences. Experience personalized search capabilities and uncover the perfect recipe to satisfy your taste buds. Cheers to a delightful journey of mixology!",
         technologies: ["React", "Context API", "React Router"],
         link: "https://vasifcocktails.netlify.com",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallCocktails,
     },
     {
         id: 10,
@@ -377,8 +378,7 @@ export const projects = [
             "Embark on a visual journey with Unsplash Images project. Simply type in a word or phrase, and instantly find a vast collection of stunning images relevant to your provided content. Whether you're seeking inspiration, looking for the perfect visual for your project, or simply enjoying the beauty of photography, Unsplash Images has you covered. Additionally, enhance your viewing experience by switching to the dark mode theme for a sleek and immersive interface. Start exploring and let your imagination roam through captivating visuals!",
         technologies: ["React", "Context API", "React Router"],
         link: "https://vasifunsplash.netlify.app/",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallCocktails,
     },
     // {
     //     id: nanoid(),
@@ -400,8 +400,7 @@ export const projects = [
             "Welcome to captivating hotel booking website designed to showcase my portfolio. Discover a world of exceptional stays at your fingertips. With its user-friendly interface, Vasif Hotel allows you to effortlessly browse and book your desired accommodations. Whether you're planning a business trip or a leisurely getaway, Vasif Hotel offers a range of options to suit your needs. Experience convenience, comfort, and unparalleled hospitality as you embark on your next adventure with Vasif Hotel.",
         technologies: ["HTML", "SCSS/CSS", "JavaScript"],
         link: "https://vasifhotel.netlify.app/",
-        smallImage: smallVinyoxla,
-        bigImage: bigVinyoxla,
+        smallImage: smallGrandTour,
     },
 ];
 
