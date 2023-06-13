@@ -378,7 +378,7 @@ export const projects = [
             "Embark on a visual journey with Unsplash Images project. Simply type in a word or phrase, and instantly find a vast collection of stunning images relevant to your provided content. Whether you're seeking inspiration, looking for the perfect visual for your project, or simply enjoying the beauty of photography, Unsplash Images has you covered. Additionally, enhance your viewing experience by switching to the dark mode theme for a sleek and immersive interface. Start exploring and let your imagination roam through captivating visuals!",
         technologies: ["React", "Context API", "React Router"],
         link: "https://vasifunsplash.netlify.app/",
-        smallImage: smallCocktails,
+        smallImage: smallUnsplash,
     },
     // {
     //     id: nanoid(),
