@@ -2078,6 +2078,43 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.errorpage {
+    margin-top: 100px;
+    padding: 0;
+    color: var(--textColor);
+    background-color: var(--backgroundColor);
+    transition: var(--darkModeTransition);
+    width: 100%;
+    font-family: var(--pp_regular);
+    overflow: hidden;
+    min-height: 80vh;
+
+    .all {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: var(--textColor);
+        background-color: var(--backgroundColor);
+        transition: var(--darkModeTransition);
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 40px;
+            width: 100%;
+        }
+
+        a {
+            font-size: 30px;
+            color: var(--textColor);
+            text-align: center;
+        }
+    }
+}
+
 @media(min-width:576px) and (max-width:992px) {
     .header {
         font-size: 18px;

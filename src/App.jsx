@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails";
 import Scroll from "./components/Scroll";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/project/:id" element={<ProjectDetails />} />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
             <Footer />
         </BrowserRouter>
