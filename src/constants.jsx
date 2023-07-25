@@ -35,6 +35,7 @@ import smallToDO from "./assets/images/smallToDO.png";
 import smallUnsplash from "./assets/images/smallUnsplash.png";
 import smallBP from "./assets/images/smallBP.png";
 import smallPullBear from "./assets/images/smallPullBear.png";
+import smallCeramicCity from "./assets/images/smallCeramicCity.png";
 
 import problem from "./assets/images/newproblem.png";
 import react from "./assets/images/newreact.png";
@@ -237,7 +238,7 @@ export const projects = [
             "C#",
             "ASP.NET Web API",
             "Repository Pattern Design",
-            "N-Layer Architecture",
+            "N-Tier Architecture",
             "Microsoft SQL Server",
             "SCSS",
             "Axios",
@@ -262,7 +263,7 @@ export const projects = [
             "C#",
             "ASP.NET MVC",
             "Repository Pattern Design",
-            "N-Layer Architecture",
+            "N-Tier Architecture",
             "Microsoft SQL Server",
         ],
         link: "https://vinyoxla.az",
@@ -284,7 +285,7 @@ export const projects = [
             "C#",
             "ASP.NET MVC",
             "Repository Pattern Design",
-            "N-Layer Architecture",
+            "N-Tier Architecture",
             "Microsoft SQL Server",
         ],
         link: "https://vasifecom.netlify.com",
@@ -292,6 +293,29 @@ export const projects = [
     },
     {
         id: 4,
+        category: "Full Stack",
+        projectName: "Ceramic City",
+        smallDescription:
+            "E-Commerce catalogue for a popular brand in Azerbaijan",
+        longDescription:
+            "I developed an ASP.NET MVC ecommerce catalogue for a brand selling bathroom furniture and accessories in Baku, Azerbaijan. The website showcases the brand's products and services, as well as its unique value proposition. The application was built using HTML, CSS, JavaScript, ASP.NET, MSSQL, C#, and Entity Framework. It was completed in one month and features a fully responsive design and good SEO optimization. The backend was built using a variety of algorithms, and the UI was built using JavaScript DOM manipulation. The website includes an admin area where users can manage products, orders, and other content. The admin area is also fully responsive, making it easy to use on any device. I am proud of the work I did on this project, and I believe it is a valuable addition to my portfolio. The website is well-designed, functional, and easy to use. It is also SEO-optimized, which will help the brand attract new customers. I am confident that this website will be a valuable asset to the brand, and I am excited to see how it helps them grow their business.",
+        technologies: [
+            "HTML",
+            "SCSS/CSS",
+            "JavaScript",
+            "Jquery",
+            "C#",
+            "ASP.NET MVC",
+            "Repository Pattern Design",
+            "N-Tier Architecture",
+            "Microsoft SQL Server",
+            "Entity Framework"
+        ],
+        link: "https://ceramiccity.az",
+        smallImage: smallCeramicCity,
+    },
+    {
+        id: 5,
         category: "Front End",
         projectName: "To ... List",
         smallDescription:
@@ -303,7 +327,7 @@ export const projects = [
         smallImage: smallToDO,
     },
     {
-        id: 5,
+        id: 6,
         category: "Front End",
         projectName: "Customs Taxes Calculator",
         smallDescription:
@@ -315,7 +339,7 @@ export const projects = [
         smallImage: smallRusum,
     },
     {
-        id: 6,
+        id: 7,
         category: "Full Stack",
         projectName: "Suefa",
         smallDescription:
@@ -334,7 +358,7 @@ export const projects = [
         smallImage: smallSuefa,
     },
     {
-        id: 7,
+        id: 8,
         category: "Front End",
         projectName: "Comfy Sloth",
         smallDescription: "A React-based E-Commerce App, made for portfolio.",
@@ -345,7 +369,7 @@ export const projects = [
         smallImage: smallComfy,
     },
     {
-        id: 8,
+        id: 9,
         category: "Front End",
         projectName: "Bacola",
         smallDescription:
@@ -357,7 +381,7 @@ export const projects = [
         smallImage: smallBacola,
     },
     {
-        id: 9,
+        id: 10,
         category: "Front End",
         projectName: "Cocktails",
         smallDescription:
@@ -369,7 +393,7 @@ export const projects = [
         smallImage: smallCocktails,
     },
     {
-        id: 10,
+        id: 11,
         category: "Front End",
         projectName: "Unsplash Images",
         smallDescription:
@@ -380,17 +404,6 @@ export const projects = [
         link: "https://vasifunsplash.netlify.app/",
         smallImage: smallUnsplash,
     },
-    // {
-    //     id: nanoid(),
-    //     category: "Front End",
-    //     projectName: "Take Color",
-    //     smallDescription: "Generate color shades and gradients with ease.",
-    //     longDescription:
-    //         "Discover the power of color with TakeColor, a versatile web application that simplifies the process of generating color shades and gradients. By simply entering your desired color, TakeColor provides a range of shades and variants, allowing you to explore different color combinations and gradients effortlessly. Whether you're a designer, developer, or simply seeking inspiration, TakeColor empowers you to create visually stunning projects by harnessing the magic of color.",
-    //     technologies: ["HTML", "SCSS/CSS", "JavaScript", "Jquery"],
-    //     link: "https://takecolor.netlify.app/",
-    //     image: "",
-    // },
     {
         id: 11,
         category: "Front End",
