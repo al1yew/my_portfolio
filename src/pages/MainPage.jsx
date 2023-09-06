@@ -5,21 +5,25 @@ import ProjectsSection from "../components/ProjectsSection";
 import CertificatesSection from "../components/CertificatesSection";
 import ContactSection from "../components/ContactSection";
 import { Helmet } from "react-helmet";
+import { ScrollRestoration } from "react-router-dom";
 
 const MainPage = () => {
     return (
-        <main>
-            <Helmet>
-                <title>Developer you always needed!</title>
-            </Helmet>
+        <>
+            <main>
+                <Helmet>
+                    <title>Developer you always needed!</title>
+                </Helmet>
 
-            <HeroSection />
-            <AboutSection />
-            <SkillsSection />
-            <ProjectsSection />
-            <CertificatesSection />
-            <ContactSection />
-        </main>
+                <HeroSection />
+                <AboutSection />
+                <SkillsSection />
+                <ProjectsSection />
+                <CertificatesSection />
+                <ContactSection />
+                <ScrollRestoration />
+            </main>
+        </>
     );
 };
 export default MainPage;

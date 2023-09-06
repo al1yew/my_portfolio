@@ -6,7 +6,7 @@ import { useThemeContext } from "../themeContext";
 import logoWhite from "../assets/images/logoW.png";
 import logoBlack from "../assets/images/logoB.png";
 import { useRef, useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const { isDarkTheme, toggleDarkTheme } = useThemeContext();

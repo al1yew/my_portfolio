@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { ScrollRestoration, useParams } from "react-router-dom";
 import { projects } from "../constants";
 import { Helmet } from "react-helmet-async";
 const ProjectDetails = () => {
@@ -48,6 +48,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
             </section>
+            <ScrollRestoration />
         </main>
     );
 };
