@@ -42,10 +42,6 @@ const Navbar = () => {
         };
     }, [isSidebarOpen]);
 
-    const location = useLocation();
-
-    const isMainPage = location.pathname === "/";
-
     return (
         <header className={isScroll ? "header thin_header" : "header"}>
             <div className="container">
