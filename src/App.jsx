@@ -7,7 +7,6 @@ import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectDetails from "./pages/ProjectDetails";
-import Scroll from "./components/Scroll";
 import ErrorPage from "./pages/ErrorPage";
 
 function App() {
@@ -24,8 +23,7 @@ function App() {
     return isLoading ? (
         <Preloader />
     ) : (
-        <BrowserRouter scrollRestoration="auto">
-            <Scroll />
+        <BrowserRouter>
             <Navbar />
             <Routes>
                 <Route path="/" element={<MainPage />} />

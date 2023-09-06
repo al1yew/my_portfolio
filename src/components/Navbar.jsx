@@ -60,13 +60,9 @@ const Navbar = () => {
                     </div>
                     <ul className="comp_ul col-lg-7 col-md-9">
                         {links.map((link, i) => {
-                            return isMainPage ? (
+                            return (
                                 <li key={i}>
-                                    <a href={"#" + link}>{link}</a>
-                                </li>
-                            ) : (
-                                <li key={i}>
-                                    <Link to="/">{link}</Link>
+                                    <a href={"/#" + link}>{link}</a>
                                 </li>
                             );
                         })}
