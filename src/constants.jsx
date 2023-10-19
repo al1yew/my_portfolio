@@ -41,6 +41,7 @@ import problem from "./assets/images/problem.png";
 import react from "./assets/images/react.png";
 import css from "./assets/images/css.png";
 import diplom from "./assets/images/code.png";
+import toefl from "./assets/images/toefl.png";
 import csharp from "./assets/images/csharp.png";
 import restapi from "./assets/images/restapi.png";
 import sql from "./assets/images/sql.png";
@@ -432,7 +433,7 @@ export const certificates = [
     certName: "React",
     date: "October, 2023",
     description:
-      "Through coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build interactive user interfaces, utilizing React's component-based architecture and state management. With this, I am equipped to develop scalable web applications, leveraging React's extensive ecosystem and its ability to seamlessly integrate with other technologies.",
+      "Through coding challenges and assessments on HackerRank, I have honed my skills in React, mastering the fundamentals and advanced concepts of the library. This certification validates my ability to build interactive user interfaces, utilizing React's component-based architecture and state management. With this, I am equipped to develop scalable web applications, leveraging React's extensive ecosystem ",
     link: "https://www.hackerrank.com/certificates/6c6f6d7a9786",
     image: react,
   },
@@ -468,7 +469,7 @@ export const certificates = [
     certName: "C#",
     date: "October, 2023",
     description:
-      "With unwavering dedication and continuous learning, I have significantly expanded my expertise in C# programming. This certification stands as a solid testament to my proficiency in developing robust and efficient applications using the C# language. It underlines my capabilities in building user-friendly interfaces, working with data, and creating efficient, maintainable code. This certification showcases my commitment to staying at the forefront of C# development, enabling me to deliver high-quality software solutions.    ",
+      "With dedication and continuous learning, I have  expanded my expertise in C# programming. This certification stands as a solid testament to my proficiency in developing robust and efficient applications using the C# language. It underlines my capabilities in building user-friendly interfaces, working with data, creating efficient, maintainable code, and my commitment to staying at the forefront of C# development. It enables me to deliver high-quality software solutions.",
     link: "https://www.hackerrank.com/certificates/550d47ab63b9",
     image: csharp,
   },
@@ -477,8 +478,17 @@ export const certificates = [
     certName: "SQL",
     date: "October, 2023",
     description:
-      "With relentless commitment and a relentless pursuit of knowledge, I have greatly enriched my skills in SQL database management. This certification serves as a strong affirmation of my proficiency in designing, optimizing, and maintaining efficient databases using SQL. It highlights my abilities in crafting data-driven solutions, working with complex queries, and ensuring data integrity. This certification underscores my unwavering dedication to remaining at the cutting edge of SQL development, empowering me to deliver top-tier data management solutions.",
+      "With relentless commitment and a relentless pursuit of knowledge, I have greatly enriched my skills in SQL database management. This certification serves as a strong affirmation of my proficiency in designing, optimizing, and maintaining efficient databases using SQL. It highlights my abilities in crafting data-driven solutions and working with complex queries. This certificate shows my unwavering dedication to remaining at the cutting edge of SQL development.",
     link: "https://www.hackerrank.com/certificates/7d1e0b2c0058",
     image: sql,
+  },
+  {
+    id: 8,
+    certName: "TOEFL IBT",
+    date: "April, 2023",
+    description:
+      "With unwavering dedication and a tireless pursuit of excellence, I have achieved a commendable score of 103 out of 120 on the TOEFL iBT, placing me at a proficient C1 level. This certification stands as a testament to my language proficiency in English. It signifies my competence in engaging in academic discussions and expressing ideas fluently. My TOEFL iBT score reflects my commitment to continuous improvement and my readiness to excel in global professional environments.",
+    link: "https://ibb.co/QvQRffz",
+    image: toefl,
   },
 ];
