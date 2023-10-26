@@ -8,6 +8,7 @@ const ContactSection = () => {
       <div className="container">
         <div className="row all">
           <h1>Contact Me!</h1>
+          <h1>P.S. Include your email {":)"}</h1>
           <form
             method="POST"
             onSubmit={handleSubmit}
