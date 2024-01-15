@@ -22,6 +22,7 @@ import {
   SiKdenlive,
   SiMysql,
   SiPostgresql,
+  SiDaisyui,
   SiMicrosoftazure,
   SiMongodb,
 } from "react-icons/si";
@@ -232,6 +233,12 @@ export const skills = [
     category: "Database",
     skillName: "Postgre SQL",
     icon: <SiPostgresql />,
+  },
+  {
+    id: nanoid(),
+    category: "React",
+    skillName: "DaisyUI",
+    icon: <SiDaisyui />,
   },
   {
     id: nanoid(),
