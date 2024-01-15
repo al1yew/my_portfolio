@@ -1,6 +1,5 @@
 import { nanoid } from "nanoid";
 import { BsBootstrap, BsFiletypeScss } from "react-icons/bs";
-
 import {
   SiStyledcomponents,
   SiAxios,
@@ -8,11 +7,13 @@ import {
   SiLodash,
   SiReactrouter,
   SiNextdotjs,
+  SiPostman,
   SiNetlify,
   SiReactquery,
   SiJquery,
   SiTailwindcss,
   SiReact,
+  SiTypescript,
   SiAuth0,
   SiVuedotjs,
   SiContentful,
@@ -21,6 +22,7 @@ import {
   SiKdenlive,
   SiMysql,
   SiPostgresql,
+  SiMicrosoftazure,
   SiMongodb,
 } from "react-icons/si";
 
@@ -64,7 +66,7 @@ export const skills = [
   },
   {
     id: nanoid(),
-    category: "HTML/CSS",
+    category: "React",
     skillName: "Tailwind CSS",
     icon: <SiTailwindcss />,
   },
@@ -100,7 +102,18 @@ export const skills = [
     skillName: "Jquery",
     icon: <SiJquery />,
   },
-  // { id: nanoid(), category: "JavaScript", skillName: "Next.js", icon: <SiNextdotjs /> },
+  {
+    id: nanoid(),
+    category: "React",
+    skillName: "Typescript",
+    icon: <SiTypescript />,
+  },
+  {
+    id: nanoid(),
+    category: "JavaScript",
+    skillName: "Next.js",
+    icon: <SiNextdotjs />,
+  },
 
   { id: nanoid(), category: "React", skillName: "Redux", icon: <SiRedux /> },
   {
@@ -109,6 +122,7 @@ export const skills = [
     skillName: "Lodash",
     icon: <SiLodash />,
   },
+
   {
     id: nanoid(),
     category: "React",
@@ -197,11 +211,16 @@ export const skills = [
   {
     id: nanoid(),
     category: "C#",
+    skillName: "Postman",
+    icon: <SiPostman />,
+  },
+  {
+    id: nanoid(),
+    category: "C#",
     skillName: "SignalR",
     icon: <SiKdenlive />,
   },
   { id: nanoid(), category: "C#", skillName: "Dapper", icon: <SiDotnet /> },
-
   {
     id: nanoid(),
     category: "Database",
@@ -225,6 +244,12 @@ export const skills = [
     category: "Database",
     skillName: "MongoDB",
     icon: <SiMongodb />,
+  },
+  {
+    id: nanoid(),
+    category: "Database",
+    skillName: "Azure",
+    icon: <SiMicrosoftazure />,
   },
 ];
 
