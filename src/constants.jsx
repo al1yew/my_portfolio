@@ -1,5 +1,8 @@
 import { nanoid } from "nanoid";
 import { BsBootstrap, BsFiletypeScss } from "react-icons/bs";
+import { PiNotionLogoLight } from "react-icons/pi";
+import { IoIosGitPullRequest } from "react-icons/io";
+
 import {
   SiStyledcomponents,
   SiAxios,
@@ -26,6 +29,7 @@ import {
   SiMicrosoftazure,
   SiMongodb,
 } from "react-icons/si";
+import { MdLanguage } from "react-icons/md";
 
 import smallVinyoxla from "./assets/images/smallVinyoxla.png";
 import smallBacola from "./assets/images/smallBacola.png";
@@ -39,6 +43,8 @@ import smallUnsplash from "./assets/images/smallUnsplash.png";
 import smallBP from "./assets/images/smallBP.png";
 import smallPullBear from "./assets/images/smallPullBear.png";
 import smallCeramicCity from "./assets/images/smallCeramicCity.png";
+import smallvincodeaz from "./assets/images/smallvincodeaz.png";
+import smallcomfynew from "./assets/images/smallcomfynew.png";
 
 import problem from "./assets/images/problem.png";
 import react from "./assets/images/react.png";
@@ -214,6 +220,24 @@ export const skills = [
     category: "C#",
     skillName: "Postman",
     icon: <SiPostman />,
+  },
+  {
+    id: nanoid(),
+    category: "C#",
+    skillName: "NLog",
+    icon: <PiNotionLogoLight />,
+  },
+  {
+    id: nanoid(),
+    category: "C#",
+    skillName: "Localization",
+    icon: <MdLanguage />,
+  },
+  {
+    id: nanoid(),
+    category: "C#",
+    skillName: "Middlewares",
+    icon: <IoIosGitPullRequest />,
   },
   {
     id: nanoid(),
@@ -447,6 +471,48 @@ export const projects = [
     technologies: ["HTML", "SCSS/CSS", "JavaScript"],
     link: "https://vasifhotel.netlify.app/",
     smallImage: smallGrandTour,
+  },
+  {
+    id: 12,
+    category: "Front End",
+    projectName: "Comfy Store",
+    smallDescription: "A React-based E-Commerce App, made for portfolio.",
+    longDescription:
+      "Introducing Comfy Store, an easy-to-use online shop built with React Router, RTK, React Query, Axios, Daisy UI, Tailwind CSS, and Context API. It's a place where you can find and buy all your household essentials. Comfy Store lets you pay securely with Stripe and offers both dark and light modes for a personalized browsing experience. With features like local storage and advanced state management, your shopping cart stays saved even if you leave the site. Explore Comfy Store today and enjoy shopping for your home comforts with ease",
+    technologies: [
+      "React",
+      "Context API",
+      "React Router 6.4",
+      "React Query",
+      "Axios",
+      "DaisyUI",
+      "Tailwind CSS",
+    ],
+    link: "https://vasifcomfystore.netlify.com",
+    smallImage: smallcomfynew,
+  },
+  {
+    id: 13,
+    category: "Full Stack",
+    projectName: "Vincode.az",
+    smallDescription:
+      "A business venture selling Carfax, Autocheck, Auction data, and vin decoder to users.",
+    longDescription:
+      "Introducing Vincode.az, a reliable online platform designed to safeguard users from car-related fraud. Built with React and .NET Web API, Vincode.az offers valuable insights from trusted sources like Carfax, AutoCheck, auction data, and VIN decoder reports. With a SQL database powering its backend, this project not only ensures security but also generates profit. Utilizing React Router, Axios, React Query, and Context API on the frontend, Vincode.az delivers a seamless user experience. On the backend, it employs Entity Framework, the repository pattern, localization, custom exceptions, NLog, AutoMapper, and Fluent Validation to maintain robust functionality and data integrity. Explore Vincode.az today and make informed decisions when buying or dealing with cars, ensuring peace of mind in every transaction.",
+    technologies: [
+      "React",
+      "Tailwind css",
+      "CSS/SCSS",
+      "Microsoft SQL Server",
+      "Asp.Net Web Api",
+      "Fluent Validation",
+      "AutoMapper",
+      "NLog",
+      "Localization",
+      "Middlewares",
+    ],
+    link: "https://vincode.az",
+    smallImage: smallvincodeaz,
   },
 ];
 
