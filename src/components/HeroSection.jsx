@@ -10,7 +10,7 @@ const HeroSection = () => {
   const downloadFile = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "VASIF_ALIYEV_CV.pdf";
+    link.download = "CV.pdf";
     link.target = "_blank";
 
     document.body.appendChild(link);
