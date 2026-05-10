@@ -2,9 +2,9 @@
 const tailwindConfig = {
   darkMode: "class",
   content: [
-    "./src/app/**/*.{js,jsx}",
-    "./src/components/**/*.{js,jsx}",
-    "./src/data/**/*.{js,jsx}",
+    "./src/app/**/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/data/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {

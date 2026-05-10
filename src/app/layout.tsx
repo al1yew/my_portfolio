@@ -1,9 +1,24 @@
+import type { Metadata, Viewport } from "next";
+import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import type { ReactNode } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { site } from "../data/portfolio";
 import "./globals.css";
 
-export const metadata = {
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-sans",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
+});
+
+export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   applicationName: site.name,
   title: {
@@ -105,7 +120,7 @@ export const metadata = {
   },
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: [
@@ -114,9 +129,13 @@ export const viewport = {
   ],
 };
 
-export default function RootLayout({ children }) {
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${manrope.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
       <body>
         <a
           href="#main"

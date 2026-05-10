@@ -19,8 +19,152 @@ import certReact from "../assets/images/react.png";
 import certRestApi from "../assets/images/restapi.png";
 import certSql from "../assets/images/sql.png";
 import certToefl from "../assets/images/toefl.png";
+import type { StaticImageData } from "next/image";
 
-export const site = {
+type ImageSource = StaticImageData | string;
+
+type Site = {
+  url: string;
+  name: string;
+  title: string;
+  description: string;
+  email: string;
+  phone: string;
+  location: string;
+  availability: string;
+  recruiterSignals: string[];
+  cvUrl: string;
+  links: {
+    github: string;
+    linkedin: string;
+    portfolio: string;
+  };
+};
+
+type NavItem = {
+  label: string;
+  href: string;
+};
+
+type HeroContent = {
+  eyebrow: string;
+  name: string;
+  position: string;
+  summary: string;
+  stats: Array<{
+    value: string;
+    label: string;
+  }>;
+  strengths: string[];
+};
+
+type TextCard = {
+  title: string;
+  description?: string;
+  detail?: string;
+};
+
+type SenioritySignals = {
+  title: string;
+  description: string;
+  items: Array<{
+    title: string;
+    detail: string;
+  }>;
+};
+
+type AboutContent = {
+  intro: string;
+  paragraphs: string[];
+  workingStyle: Array<{
+    title: string;
+    detail: string;
+  }>;
+  profileCards: Array<{
+    title: string;
+    detail: string;
+  }>;
+};
+
+type ExperienceItem = {
+  company: string;
+  role: string;
+  location: string;
+  period: string;
+  summary: string;
+  highlights: string[];
+};
+
+type PrivateProduct = {
+  name: string;
+  role: string;
+  status: string;
+  stage: string;
+  positioning: string;
+  summary: string;
+  features: string[];
+  note: string;
+  tech: string[];
+};
+
+type Project = {
+  name: string;
+  type: string;
+  image: ImageSource;
+  href: string;
+  status: string;
+  summary: string;
+  details: string[];
+  tech: string[];
+};
+
+type ProjectArchiveItem = {
+  name: string;
+  image: ImageSource;
+  href: string;
+  summary: string;
+};
+
+type EducationItem = {
+  degree: string;
+  school: string;
+  location: string;
+  period: string;
+  details: string[];
+};
+
+type StackGroup = {
+  group: string;
+  items: string[];
+};
+
+type Recognition = {
+  title: string;
+  meta: string;
+  description: string;
+};
+
+type Certification = {
+  title: string;
+  provider: string;
+  date: string;
+  meta: string;
+  description: string;
+  href: string;
+  image: ImageSource;
+};
+
+type WritingContent = {
+  intro: string;
+  profile: Array<{
+    title: string;
+    description: string;
+  }>;
+  interests: string[];
+  manuscripts: string[];
+};
+
+export const site: Site = {
   url: "https://vasifaliyev.com",
   name: "Vasif Aliyev",
   title:
@@ -48,7 +192,7 @@ export const site = {
   },
 };
 
-export const navItems = [
+export const navItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
@@ -58,7 +202,7 @@ export const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const hero = {
+export const hero: HeroContent = {
   eyebrow: "Senior Full-Stack Software Engineer in Kraków",
   name: "Vasif Aliyev",
   position:
@@ -80,7 +224,7 @@ export const hero = {
   ],
 };
 
-export const valueProposition = [
+export const valueProposition: TextCard[] = [
   {
     title: "Full-stack ownership",
     description:
@@ -113,7 +257,7 @@ export const valueProposition = [
   },
 ];
 
-export const senioritySignals = {
+export const senioritySignals: SenioritySignals = {
   title: "Senior-level operating model",
   description:
     "The seniority model I work toward is practical: accountable ownership, clear technical decisions, cross-functional alignment, and production delivery.",
@@ -151,7 +295,7 @@ export const senioritySignals = {
   ],
 };
 
-export const about = {
+export const about: AboutContent = {
   intro:
     "I am a senior full-stack software engineer at esurance.ch and a master's student in Business and Finance Management at Jagiellonian University, combining hands-on engineering delivery with a strong business and product background.",
   paragraphs: [
@@ -196,7 +340,7 @@ export const about = {
   ],
 };
 
-export const experience = [
+export const experience: ExperienceItem[] = [
   {
     company: "esurance.ch",
     role: "Senior Full-Stack Software Engineer",
@@ -261,7 +405,7 @@ export const experience = [
   },
 ];
 
-export const privateProducts = [
+export const privateProducts: PrivateProduct[] = [
   {
     name: "Private Automotive Services Marketplace",
     role: "Independent product builder",
@@ -283,7 +427,7 @@ export const privateProducts = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     name: "Vinyoxla.az",
     type: "Vehicle history platform",
@@ -356,7 +500,7 @@ export const projects = [
   },
 ];
 
-export const projectArchive = [
+export const projectArchive: ProjectArchiveItem[] = [
   {
     name: "Pull & Bear E-commerce",
     image: smallPullBear,
@@ -415,7 +559,7 @@ export const projectArchive = [
   },
 ];
 
-export const education = [
+export const education: EducationItem[] = [
   {
     degree: "Master's Degree, Business and Finance Management",
     school: "Jagiellonian University, Faculty of Management and Social Communication",
@@ -451,7 +595,7 @@ export const education = [
   },
 ];
 
-export const stack = [
+export const stack: StackGroup[] = [
   {
     group: "Core Hiring Stack",
     items: [
@@ -637,13 +781,13 @@ export const stack = [
   },
 ];
 
-export const credentials = [
+export const credentials: string[] = [
   "Legal residence in Poland with valid work authorization for Poland/EU/Swiss roles; based in Kraków and open to remote or international engineering opportunities.",
   "TOEFL iBT 103/120, professional English fluency.",
   "Languages: Russian and Azerbaijani native; English and Turkish fluent; Polish developing, approximately A2.",
 ];
 
-export const recognitions = [
+export const recognitions: Recognition[] = [
   {
     title: "NAWA Stefan Banach Scholarship",
     meta: "Poland, 2023-2025",
@@ -664,7 +808,7 @@ export const recognitions = [
   },
 ];
 
-export const certifications = [
+export const certifications: Certification[] = [
   {
     title: "Next.js 14 & React - The Complete Guide",
     provider: "Udemy",
@@ -767,7 +911,7 @@ export const certifications = [
   },
 ];
 
-export const writing = {
+export const writing: WritingContent = {
   intro:
     "A focused academic profile around digital platforms, AI-enabled business transformation, and platform-based markets. It supports the engineering work with stronger product, management, and research judgment.",
   profile: [
@@ -818,7 +962,7 @@ export const writing = {
   ],
 };
 
-export const jsonLd = {
+export const jsonLd: Record<string, unknown> = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: site.name,

@@ -1,4 +1,10 @@
-export default function SectionHeader({ eyebrow, title, description }) {
+type SectionHeaderProps = {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+};
+
+export default function SectionHeader({ eyebrow, title, description }: SectionHeaderProps) {
   return (
     <div className="mx-auto mb-10 max-w-3xl text-center md:mb-14">
       {eyebrow ? (

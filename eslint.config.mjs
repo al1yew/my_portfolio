@@ -6,8 +6,6 @@ const eslintConfig = [
     ignores: [
       ".next/**",
       "node_modules/**",
-      "src/legacy/**",
-      "src/legacy-pages/**",
     ],
   },
 ];

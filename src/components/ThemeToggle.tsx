@@ -3,7 +3,7 @@
 import { Moon, Sun } from "lucide-react";
 import { useEffect, useSyncExternalStore } from "react";
 
-function getThemePreference() {
+function getThemePreference(): boolean {
   if (typeof window === "undefined") {
     return false;
   }
@@ -17,7 +17,7 @@ function getThemePreference() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
 
-function subscribeTheme(callback) {
+function subscribeTheme(callback: () => void): () => void {
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   const handleChange = () => callback();
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { Download, Github, Linkedin, Menu, X } from "lucide-react";
+import type { MouseEvent } from "react";
 import { useEffect, useState } from "react";
 import { navItems, site } from "../data/portfolio";
 import ThemeToggle from "./ThemeToggle";
@@ -25,11 +26,11 @@ export default function Header() {
   }, [isOpen]);
 
   const closeMenu = () => setIsOpen(false);
-  const scrollToSection = (event, href) => {
+  const scrollToSection = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
     event.preventDefault();
     closeMenu();
 
-    const target = document.querySelector(href);
+    const target = document.querySelector<HTMLElement>(href);
 
     if (!target) {
       return;
